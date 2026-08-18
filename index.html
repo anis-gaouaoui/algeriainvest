@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Algeria Invest — Votre porte d'entrée vers l'investissement en Algérie</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="style.css" /> 
+		
+	</head>
+	<body>
+		
+		<header>
+			<div class="header-top">
+				<a href="#" class="logo">
+					
+					<img src="images/logo-invest-gold.png" alt="Description">
+					
+				</a>
+				<div class="search-widget" id="searchWidget">
+					<button class="search-toggle" id="searchToggle" type="button" aria-label="Ouvrir la recherche" aria-expanded="false">
+						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+					</button>
+					<form class="search-form" id="searchForm" role="search">
+						<input type="text" class="search-input" id="searchInput" placeholder="Rechercher un secteur, une région, une démarche…" aria-label="Rechercher sur le site">
+						<svg class="search-input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+					</form>
+				</div>
+				
+				<div class="header-top-right">
+					<a href="#" class="quick-stat">
+						<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg>
+						Accéder à la plateforme
+					</a>
+					
+					<div class="lang-switch" id="langSwitch">
+						<button class="lang-toggle" id="langToggle" type="button" aria-haspopup="true" aria-expanded="false">
+							<span class="lang-current" id="langCurrent">FR</span>
+							<svg class="lang-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
+						</button>
+						<ul class="lang-dropdown" id="langDropdown">
+							<li><button type="button" data-lang="fr" class="active">Français</button></li>
+							<li><button type="button" data-lang="en">English</button></li>
+							<li><button type="button" data-lang="ar">العربية</button></li>
+						</ul>
+					</div>
+					
+					<a href="#contact" class="nav-cta">Démarrer un projet</a>
+					<div class="burger"><span></span><span></span><span></span></div>
+				</div>
+			</div>
+			
+			<div class="header-bottom">
+				<ul class="nav-links">
+					<li><a href="#secteurs">Investir en Algérie</a></li>
+					<li><a href="#regions">Nos services</a></li>
+					<li><a href="#reglementaire">Notre méthodologie</a></li>
+					<li><a href="#programmes" class="active">Pourquoi Algeria INVEST®</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</header>
+		
+		<!-- HERO SLIDER : le fond change, le texte reste fixe -->
+		<section class="hero" id="hero-slider">
+			
+			<div class="hero-bg-layers">
+				<div class="hero-bg b1 active">
+					<video src="video/1.mp4" autoplay muted loop playsinline></video>
+				</div>
+				<div class="hero-bg b2">
+					<video src="video/2.mp4" autoplay muted loop playsinline></video>
+				</div>
+				<div class="hero-bg b3">
+					<video src="video/3.mp4" autoplay muted loop playsinline></video>
+				</div>
+			</div>
+			<div class="hero-overlay"></div>
+			<div class="hero-grain"></div>
+			<div class="hero-bottom-fade"></div>
+			
+			<div class="wrap hero-fixed-content">
+				<h1 class="hero-h1">Investissez dans l'économie la plus diversifiée du Maghreb</h1>
+				<p class="lead">Un guichet unique, un cadre juridique stabilisé et un accès direct aux marchés africain et méditerranéen.</p>
+				
+				<div class="hero-pills">
+					<a href="#secteurs" class="pill-btn">Explorer les secteurs ↗</a>
+					<a href="#matchmaking" class="pill-btn">Services investisseurs ↗</a>
+					<a href="#contact" class="pill-btn">Nous contacter ↗</a>
+				</div>
+			</div>
+			
+			<div class="wrap hero-bottom">
+				<div class="hero-bottom-row">
+					<div class="hero-progress">
+						<button class="ctrl-slide active" data-slide="0" aria-label="Slide 1"><span class="track"><span class="gauge"></span></span></button>
+						<button class="ctrl-slide" data-slide="1" aria-label="Slide 2"><span class="track"><span class="gauge"></span></span></button>
+						<button class="ctrl-slide" data-slide="2" aria-label="Slide 3"><span class="track"><span class="gauge"></span></span></button>
+					</div>
+					<div class="hero-controls">
+						<button class="ctrl-btn" id="hero-toggle" aria-label="Mettre en pause">⏸</button>
+						<button class="ctrl-btn" id="hero-fullscreen" aria-label="Plein écran">⤢</button>
+						
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- VISION -->
+		<!-- <section class="section section-wide"> -->
+		<!-- <div class="section-header"> -->
+		<!-- <div class="title-row"> -->
+		<!-- <h2>Pourquoi Investir en Algérie</h2> -->
+		<!-- <div class="title-line"></div> -->
+		<!-- </div> -->
+		<!-- <p class="subtitle">Top 5 Raisons d'Investir</p> -->
+		<!-- </div> -->
+		
+		<!-- <div class="cards-grid"> -->
+		
+		<!-- <div class="flip-card card-1"> -->
+		<!-- <div class="flip-card-inner"> -->
+		<!-- <div class="flip-card-front"> -->
+		<!-- <h3>Vision Transformationnelle, Jeune Nation</h3> -->
+		<!-- <p>70% de la population algérienne a moins de 35 ans (2024)</p> -->
+		<!-- </div> -->
+		<!-- <div class="flip-card-back"> -->
+		<!-- <p>Une main-d'œuvre jeune, dynamique et de plus en plus qualifiée, prête à porter la croissance économique de demain.</p> -->
+		<!-- </div> -->
+		<!-- </div> -->
+		<!-- </div> -->
+		
+		<!-- <div class="flip-card card-2"> -->
+		<!-- <div class="flip-card-inner"> -->
+		<!-- <div class="flip-card-front"> -->
+		<!-- <h3>Une Destination Fiable et Stable</h3> -->
+		<!-- <p>Reconnue parmi les destinations IDE les plus stables de la région MENA</p> -->
+		<!-- </div> -->
+		<!-- <div class="flip-card-back"> -->
+		<!-- <p>Un cadre politique et macroéconomique stable qui rassure les investisseurs sur le long terme.</p> -->
+		<!-- </div> -->
+		<!-- </div> -->
+		<!-- </div> -->
+		
+		<!-- <div class="flip-card card-3"> -->
+		<!-- <div class="flip-card-inner"> -->
+		<!-- <div class="flip-card-front"> -->
+		<!-- <h3>Services et Infrastructures de Classe Mondiale</h3> -->
+		<!-- <p>Infrastructures de santé, d'éducation, de transport et d'énergies renouvelables à l'état de l'art</p> -->
+		<!-- </div> -->
+		<!-- <div class="flip-card-back"> -->
+		<!-- <p>Des investissements massifs dans les infrastructures publiques garantissent un environnement opérationnel de haut niveau.</p> -->
+		<!-- </div> -->
+		<!-- </div> -->
+		<!-- </div> -->
+		
+		<!-- <div class="flip-card card-4"> -->
+		<!-- <div class="flip-card-inner"> -->
+		<!-- <div class="flip-card-front"> -->
+		<!-- <h3>Infrastructure Numérique de Pointe</h3> -->
+		<!-- <p>Classée au 2ème rang mondial de l'indice de maturité du gouvernement numérique (2025)</p> -->
+		<!-- </div> -->
+		<!-- <div class="flip-card-back"> -->
+		<!-- <p>Une administration digitalisée qui simplifie les démarches et accélère les procédures d'investissement.</p> -->
+		<!-- </div> -->
+		<!-- </div> -->
+		<!-- </div> -->
+		
+		<!-- <div class="flip-card card-5"> -->
+		<!-- <div class="flip-card-inner"> -->
+		<!-- <div class="flip-card-front"> -->
+		<!-- <h3>Investissements Transformationnels à Grande Échelle</h3> -->
+		<!-- <p>Plus de 2 000 milliards USD d'opportunités d'investissement</p> -->
+		<!-- </div> -->
+		<!-- <div class="flip-card-back"> -->
+		<!-- <p>Des projets structurants dans l'énergie, l'industrie et les infrastructures offrant un potentiel de croissance considérable.</p> -->
+		<!-- </div> -->
+		<!-- </div> -->
+		<!-- </div> -->
+		
+		<!-- </div> -->
+		
+		
+		<!-- </section> -->
+		
+		
+		<section class="dz-invest" id="dzInvest">
+			
+			<img class="dz-invest__bg" src="images/bg.webp" alt="" aria-hidden="true">
+			<img class="dz-invest__globe" src="images/sa.webp" alt="" aria-hidden="true">
+			
+			<div class="dz-invest__map"></div>
+			
+			
+			<div class="dz-invest__inner">
+				
+				<header class="dz-invest__header">
+					<h2>Pourquoi investir en Algérie</h2>
+					<h1>Un marché en transformation profonde</h1>
+					<p>L'Algérie s'inscrit dans une dynamique de transformation économique portée par un ensemble de réformes destinées à renforcer l'attractivité du territoire, améliorer le climat des affaires et favoriser l'investissement productif.</p>
+				</header>
+				
+				<div class="dz-invest__row">
+					
+					<!-- CARTE 1 : VUE MACROECONOMIQUE -->
+					<div class="dz-card" data-reveal>
+						<div class="dz-card__head">
+							<span class="dz-card__icon">
+								<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.8 2.6 4.2 6 4.2 9s-1.4 6.4-4.2 9c-2.8-2.6-4.2-6-4.2-9s1.4-6.4 4.2-9Z"/></svg>
+							</span>
+							<h2>Vue macroéconomique</h2>
+						</div>
+						
+						<div class="dz-sub">
+							<h3>Attractivité de l'investissement</h3>
+							<p>Signaux de confiance des investisseurs et dynamique des flux de capitaux.</p>
+							<div class="dz-stats">
+								<div class="dz-stat" data-reveal-item>
+									<div class="dz-stat__value"><span class="dz-num" data-target="1.43" data-decimals="2">0</span> <span class="dz-unit">Md$</span></div>
+									<div class="dz-stat__label">Flux d'IDE en 2024</div>
+								</div>
+								<div class="dz-stat" data-reveal-item>
+									<div class="dz-stat__value"><span class="dz-num" data-target="18" data-decimals="0" data-prefix="+">0</span><span class="dz-unit">%</span></div>
+									<div class="dz-stat__label">Croissance des flux d'IDE en 2024, contre -11 % au niveau mondial</div>
+								</div>
+								<div class="dz-stat" data-reveal-item>
+									<div class="dz-stat__value"><span class="dz-num" data-target="48" data-decimals="0">0</span> <span class="dz-unit">Mds$</span></div>
+									<div class="dz-stat__label">Investis dans les mégaprojets entre 2021 et 2024</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="dz-sub">
+							<h3>Marché &amp; population</h3>
+							<p>Un accès direct à un bassin de consommation et une base industrielle en expansion.</p>
+							<div class="dz-stats dz-stats--two">
+								<div class="dz-stat" data-reveal-item>
+									<div class="dz-stat__value"><span class="dz-num" data-target="1.4" data-decimals="1">0</span> <span class="dz-unit">Md</span></div>
+									<div class="dz-stat__label">Consommateurs accessibles via la ZLECAf</div>
+								</div>
+								<div class="dz-stat" data-reveal-item>
+									<div class="dz-stat__value"><span class="dz-num" data-target="18" data-decimals="0" data-prefix="+">0</span><span class="dz-unit">%</span></div>
+									<div class="dz-stat__label">Croissance industrielle cumulée en 2025</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="dz-sub dz-sub--tight">
+							<h3>Positionnement</h3>
+							<div class="dz-tags">
+								<span class="dz-tag" data-reveal-item>Europe</span>
+								<span class="dz-tag" data-reveal-item>Maghreb</span>
+								<span class="dz-tag" data-reveal-item>Afrique</span>
+							</div>
+						</div>
+					</div>
+					
+					<!-- CARTE 2 : CADRE REGLEMENTAIRE -->
+					<div class="dz-card" data-reveal>
+						<div class="dz-card__head">
+							<span class="dz-card__icon">
+								<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v3M12 18v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M3 12h3M18 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/><circle cx="12" cy="12" r="4"/></svg>
+							</span>
+							<h2>Cadre réglementaire</h2>
+						</div>
+						
+						<div class="dz-sub">
+							<h3>Réformes engagées depuis 2022</h3>
+							<p>Un ensemble de réformes destinées à renforcer l'attractivité du territoire, améliorer le climat des affaires et favoriser l'investissement productif.</p>
+							<div class="dz-badges">
+								<div class="dz-badge" data-reveal-item>
+									<div class="dz-badge__num">51/49</div>
+									<div class="dz-badge__text">Règle supprimée pour les secteurs non stratégiques</div>
+								</div>
+								<div class="dz-badge" data-reveal-item>
+									<div class="dz-badge__num">22-18</div>
+									<div class="dz-badge__text">Nouvelle loi cadre sur l'investissement</div>
+								</div>
+								<div class="dz-badge" data-reveal-item>
+									<div class="dz-badge__num">AAPI</div>
+									<div class="dz-badge__text">Guichet unique, démarches simplifiées</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="dz-highlight" data-reveal-item>
+							<div class="dz-highlight__value"><span class="dz-num" data-target="1.43" data-decimals="2">0</span> Md$</div>
+							<div class="dz-highlight__label">Flux d'investissements directs étrangers en 2024</div>
+							
+							<div class="dz-factors">
+								<div class="dz-factor" data-reveal-item>
+									<span class="dz-factor__rank">01</span>
+									<span class="dz-factor__text">Réformes économiques<br><small>Engagées depuis 2022</small></span>
+								</div>
+								<div class="dz-factor dz-factor1" data-reveal-item>
+									<span class="dz-factor__rank">02</span>
+									<span class="dz-factor__text">Guichet unique<br><small>Démarches via l'AAPI</small></span>
+								</div>
+								<div class="dz-factor dz-factor2" data-reveal-item>
+									<span class="dz-factor__rank">03</span>
+									<span class="dz-factor__text">Diversification<br><small>Priorité à l'industrialisation</small></span>
+								</div>
+								<div class="dz-factor dz-factor3" data-reveal-item>
+									<span class="dz-factor__rank">04</span>
+									<span class="dz-factor__text">Nouveau cadre légal<br><small>Loi n°22-18</small></span>
+								</div>
+							</div>
+							
+							<div class="dz-highlight__source">Source&nbsp;: Lois 2022–2025, JORADP.</div>
+						</div>
+					</div>
+					
+				</div>
+				
+				<div class="dz-invest__cta-wrap">
+					<button class="dz-cta" type="button"><span>En savoir plus sur l'investissement en Algérie ↗</span></button>
+				</div>
+				
+			</div>
+		</section>
+		
+		<!-- essaisection-claire -->
+		<section class="section-secteurs">
+			<svg width="0" height="0" style="position:absolute">
+				<defs>
+					<clipPath id="hexRound" clipPathUnits="objectBoundingBox">
+						<path d="M0.33,0.03
+						L0.67,0.03
+						Q0.75,0.03 0.7876,0.1006
+						L0.9625,0.4294
+						Q1,0.5 0.9625,0.5706
+						L0.7876,0.8994
+						Q0.75,0.97 0.67,0.97
+						L0.33,0.97
+						Q0.25,0.97 0.2125,0.8994
+						L0.0376,0.5706
+						Q0,0.5 0.0376,0.4294
+						L0.2125,0.1006
+						Q0.25,0.03 0.33,0.03
+						Z"/>
+					</clipPath>
+				</defs>
+			</svg>
+			<img class="motif" src="images/motif-pattern.png" alt="">
+			<header class="dz-invest__header"style="z-index:1;">
+					<h2 style="color:black;">Pourquoi investir en Algérie</h2>
+					<h1 style="color:black;">Un marché en transformation profonde</h1>
+					<p style="color:black;">L'Algérie s'inscrit dans une dynamique de transformation économique portée par un ensemble de réformes destinées à renforcer l'attractivité du territoire, améliorer le climat des affaires et favoriser l'investissement productif.</p>
+			</header>
+			
+			<div class="wrapper">
+			
+			
+			<div class="layout">
+				<!-- Colonne des onglets -->
+				<div class="tabs-col">
+					<button class="scroll-btn" id="scrollUp" aria-label="Programme précédent">▲</button>
+					
+					<div class="tabs-list" id="tabsList" role="tablist" aria-orientation="vertical">
+						<button class="tab-btn active" role="tab" aria-selected="true" aria-controls="panel-1" id="tab-1" data-target="panel-1">
+							Agriculture & agro-industrie
+						</button>
+						<button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-2" id="tab-2" data-target="panel-2">
+							Industrie & manufacturing
+						</button>
+						<button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-3" id="tab-3" data-target="panel-3">
+							Énergies renouvelables
+						</button>
+						<button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-4" id="tab-4" data-target="panel-4">
+							Technologie & digital
+						</button>
+						<button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-5" id="tab-5" data-target="panel-5">
+							Mines & ressources stratégiques
+						</button>
+					</div>
+					
+					<button class="scroll-btn" id="scrollDown" aria-label="Programme suivant">▼</button>
+				</div>
+				
+				<!-- Panneau de contenu -->
+				<div class="panel" id="panel">
+					
+					<!-- Panneau 1 -->
+					<div class="panel-content active" id="panel-1" role="tabpanel" aria-labelledby="tab-1">
+						<div class="panel-title">Agriculture & agro-industrie</div>
+						<img class="panel-image" src="images/22.png" alt="Nom du Programme">
+						<h2>Agriculture & agro-industrie</h2>
+						<p>Décris ici en une ou deux phrases l'objectif principal du programme.</p>
+						<p>Ajoute un second paragraphe avec plus de détails si nécessaire.</p>
+						
+						<h3 class="benefits-title">Avantages du programme :</h3>
+						<div class="benefits-grid">
+							<div class="benefit-card">
+								<div class="benefit-icon" style="background: #2fb6a3">🌐</div>
+								<h4>Avantage 1</h4>
+								<p>Courte description de l'avantage.</p>
+							</div>
+							<div class="benefit-card">
+								<div class="benefit-icon" style="background: #8b5cf6">💻</div>
+								<h4>Avantage 2</h4>
+								<p>Courte description de l'avantage.</p>
+							</div>
+							<div class="benefit-card">
+								<div class="benefit-icon" style="background: #0e2a52">📈</div>
+								<h4>Avantage 3</h4>
+								<p>Courte description de l'avantage.</p>
+							</div>
+						</div>
+						
+						<div class="panel-footer">
+							<a href="#" class="btn-link">En savoir plus ↗</a>
+						</div>
+					</div>
+					
+					<!-- Panneau 2 -->
+					<div class="panel-content" id="panel-2" role="tabpanel" aria-labelledby="tab-2" hidden>
+						<div class="panel-title">Industrie & manufacturing</div>
+						<img class="panel-image" src="images/33.png" alt="Deuxième Programme">
+						<h2>Industrie & manufacturing</h2>
+						<p>Texte de présentation du deuxième programme.</p>
+						<p>Complète avec le contenu adapté à ton projet.</p>
+						
+						<h3 class="benefits-title">Avantages du programme :</h3>
+						<div class="benefits-grid">
+							<div class="benefit-card">
+								<div class="benefit-icon" style="background: #2fb6a3">🌐</div>
+								<h4>Avantage 1</h4>
+								<p>Courte description de l'avantage.</p>
+							</div>
+							<div class="benefit-card">
+								<div class="benefit-icon" style="background: #8b5cf6">💻</div>
+								<h4>Avantage 2</h4>
+								<p>Courte description de l'avantage.</p>
+							</div>
+							<div class="benefit-card">
+								<div class="benefit-icon" style="background: #0e2a52">📈</div>
+								<h4>Avantage 3</h4>
+								<p>Courte description de l'avantage.</p>
+							</div>
+						</div>
+						
+						<div class="panel-footer">
+							<a href="#" class="btn-link">En savoir plus ↗</a>
+						</div>
+					</div>
+					
+					<!-- Panneau 3 -->
+					<div class="panel-content" id="panel-3" role="tabpanel" aria-labelledby="tab-3" hidden>
+						<div class="panel-title">Énergies renouvelables</div>
+						<img class="panel-image" src="images/44.png" alt="Troisième Programme">
+						<h2>Énergies renouvelables</h2>
+						<p>Texte de présentation du troisième programme.</p>
+						<p>Complète avec le contenu adapté à ton projet.</p>
+						
+						<h3 class="benefits-title">Avantages du programme :</h3>
+						<div class="benefits-grid">
+							<div class="benefit-card">
+								<div class="benefit-icon" style="background: #2fb6a3">🌐</div>
+								<h4>Avantage 1</h4>
+								<p>Courte description de l'avantage.</p>
+							</div>
+							<div class="benefit-card">
+								<div class="benefit-icon" style="background: #8b5cf6">💻</div>
+								<h4>Avantage 2</h4>
+								<p>Courte description de l'avantage.</p>
+							</div>
+							<div class="benefit-card">
+								<div class="benefit-icon" style="background: #0e2a52">📈</div>
+								<h4>Avantage 3</h4>
+								<p>Courte description de l'avantage.</p>
+							</div>
+						</div>
+						
+						<div class="panel-footer">
+							<a href="#" class="btn-link">En savoir plus ↗</a>
+						</div>
+					</div>
+					
+					<!-- Panneau 4 -->
+					<div class="panel-content" id="panel-4" role="tabpanel" aria-labelledby="tab-4" hidden>
+						<div class="panel-title">Technologie & digital</div>
+						<img class="panel-image" src="images/55.png" alt="Quatrième Programme">
+						<h2>Technologie & digital</h2>
+						<p>Texte de présentation du quatrième programme.</p>
+						<p>Complète avec le contenu adapté à ton projet.</p>
+						
+						<h3 class="benefits-title">Avantages du programme :</h3>
+						<div class="benefits-grid">
+							<div class="benefit-card">
+								<div class="benefit-icon" style="background: #2fb6a3">🌐</div>
+								<h4>Avantage 1</h4>
+								<p>Courte description de l'avantage.</p>
+							</div>
+							<div class="benefit-card">
+								<div class="benefit-icon" style="background: #8b5cf6">💻</div>
+								<h4>Avantage 2</h4>
+								<p>Courte description de l'avantage.</p>
+							</div>
+							<div class="benefit-card">
+								<div class="benefit-icon" style="background: #0e2a52">📈</div>
+								<h4>Avantage 3</h4>
+								<p>Courte description de l'avantage.</p>
+							</div>
+						</div>
+						
+						<div class="panel-footer">
+							<a href="#" class="btn-link">En savoir plus ↗</a>
+						</div>
+					</div>
+					
+					<!-- Panneau 5 -->
+					<div class="panel-content" id="panel-5" role="tabpanel" aria-labelledby="tab-5" hidden>
+						<div class="panel-title">Mines & ressources stratégiques</div>
+						<img class="panel-image" src="images/11.png" alt="Cinquième Programme">
+						<h2>Mines & ressources stratégiques</h2>
+						<p>Texte de présentation du cinquième programme.</p>
+						<p>Complète avec le contenu adapté à ton projet.</p>
+						
+						<h3 class="benefits-title">Avantages du programme :</h3>
+						<div class="benefits-grid">
+							<div class="benefit-card">
+								<div class="benefit-icon" style="background: #2fb6a3">🌐</div>
+								<h4>Avantage 1</h4>
+								<p>Courte description de l'avantage.</p>
+							</div>
+							<div class="benefit-card">
+								<div class="benefit-icon" style="background: #8b5cf6">💻</div>
+								<h4>Avantage 2</h4>
+								<p>Courte description de l'avantage.</p>
+							</div>
+							<div class="benefit-card">
+								<div class="benefit-icon" style="background: #0e2a52">📈</div>
+								<h4>Avantage 3</h4>
+								<p>Courte description de l'avantage.</p>
+							</div>
+						</div>
+						
+						<div class="panel-footer">
+							<a href="#" class="btn-link">En savoir plus ↗</a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		
+		</div>
+		
+		
+		
+			
+			
+			<!-- <div class="wrap"> -->
+				
+				<!-- <h1 class="sector-title">5 secteurs porteurs identifiés</h1> -->
+				<!-- <p class="subtitle">Une cartographie des filières où l'Algérie offre aujourd'hui les conditions les plus favorables à l'investissement national et international.</p> -->
+				
+				<!-- <div class="stats"> -->
+					<!-- <div class="stat"> -->
+						<!-- <div class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22V12"/><path d="M12 12C12 7 8 5 4 5c0 5 3 8 8 8"/><path d="M12 12c0-4 3-6 7-6 0 4-2 7-7 7"/></svg></div> -->
+						<!-- <div> -->
+							<!-- <div class="stat-num">34 Mds$</div> -->
+							<!-- <div class="stat-label">Agriculture &amp; agro-industrie<br>15 % du PIB</div> -->
+						<!-- </div> -->
+					<!-- </div> -->
+					<!-- <div class="stat"> -->
+						<!-- <div class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20V10M10 20V4M16 20V14M22 20H2"/></svg></div> -->
+						<!-- <div> -->
+							<!-- <div class="stat-num">+18 %</div> -->
+							<!-- <div class="stat-label">Croissance industrielle<br>cumulée en 2025</div> -->
+						<!-- </div> -->
+					<!-- </div> -->
+					<!-- <div class="stat"> -->
+						<!-- <div class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg></div> -->
+						<!-- <div> -->
+							<!-- <div class="stat-num">15 000 MW</div> -->
+							<!-- <div class="stat-label">Capacité ENR visée<br>d'ici 2035</div> -->
+						<!-- </div> -->
+					<!-- </div> -->
+				<!-- </div> -->
+				
+				<!-- <div class="steps"> -->
+					<!-- <div class="hex-item" data-step="1" tabindex="0" role="button" aria-label="Agriculture et agro-industrie"> -->
+						<!-- <div class="hex"> -->
+							<!-- <div class="hex-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22V12"/><path d="M12 12C12 7 8 5 4 5c0 5 3 8 8 8"/><path d="M12 12c0-4 3-6 7-6 0 4-2 7-7 7"/></svg></div> -->
+							<!-- <div class="hex-num">1</div> -->
+							<!-- <div class="hex-label">Agriculture &amp; </br>agro-industrie</div> -->
+						<!-- </div> -->
+						<!-- <div class="dot"></div> -->
+					<!-- </div> -->
+					<!-- <div class="connector">⋮⋮</div> -->
+					<!-- <div class="hex-item" data-step="2" tabindex="0" role="button" aria-label="Industrie et manufacturing"> -->
+						<!-- <div class="hex"> -->
+							<!-- <div class="hex-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20V10M10 20V4M16 20V14M22 20H2"/></svg></div> -->
+							<!-- <div class="hex-num">2</div> -->
+							<!-- <div class="hex-label">Industrie &amp; </br>manufacturing</div> -->
+						<!-- </div> -->
+						<!-- <div class="dot"></div> -->
+					<!-- </div> -->
+					<!-- <div class="connector">⋮⋮</div> -->
+					<!-- <div class="hex-item" data-step="3" tabindex="0" role="button" aria-label="Énergies renouvelables"> -->
+						<!-- <div class="hex"> -->
+							<!-- <div class="hex-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg></div> -->
+							<!-- <div class="hex-num">3</div> -->
+							<!-- <div class="hex-label">Énergies </br>renouvelables</div> -->
+						<!-- </div> -->
+						<!-- <div class="dot"></div> -->
+					<!-- </div> -->
+					<!-- <div class="connector">⋮⋮</div> -->
+					<!-- <div class="hex-item" data-step="4" tabindex="0" role="button" aria-label="Technologie et digital"> -->
+						<!-- <div class="hex"> -->
+							<!-- <div class="hex-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h.01M9 15h.01M15 9h.01M15 15h.01M12 9v6"/></svg></div> -->
+							<!-- <div class="hex-num">4</div> -->
+							<!-- <div class="hex-label">Technologie &amp; </br>digital</div> -->
+						<!-- </div> -->
+						<!-- <div class="dot"></div> -->
+					<!-- </div> -->
+					<!-- <div class="connector">⋮⋮</div> -->
+					<!-- <div class="hex-item" data-step="5" tabindex="0" role="button" aria-label="Mines et ressources stratégiques"> -->
+						<!-- <div class="hex"> -->
+							<!-- <div class="hex-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 20l6-10 4 6 3-4 5 8z"/></svg></div> -->
+							<!-- <div class="hex-num">5</div> -->
+							<!-- <div class="hex-label">Mines &amp; ressources stratégiques</div> -->
+						<!-- </div> -->
+						<!-- <div class="dot"></div> -->
+					<!-- </div> -->
+				<!-- </div> -->
+				
+				<!-- <div class="panel"> -->
+					<!-- <h2 id="panelTitle">Agriculture & agro-industrie</h2> -->
+					<!-- <div class="panel-body"> -->
+						<!-- <div class="content"> -->
+							<!-- <p class="intro" id="panelIntro"></p> -->
+							<!-- <div id="featureList"></div> -->
+							
+							<!-- <div class="btn-row"> -->
+								<!-- <button class="btn btn-outline">Voir le guide ↓</button> -->
+								<!-- <button class="btn btn-solid">Échanger avec un expert ↗</button> -->
+							<!-- </div> -->
+						<!-- </div> -->
+						
+						<!-- <div class="visual"> -->
+							<!-- <img id="panelImage" src="" alt=""> -->
+						<!-- </div> -->
+					<!-- </div> -->
+				<!-- </div> -->
+				
+				<!-- <img class="skyline" src="images/skyline.png" alt=""> -->
+			<!-- </div> -->
+			
+			
+			
+			<!-- <script> -->
+				<!-- const stepData = { -->
+					<!-- 1: { -->
+						<!-- accent: 'var(--teal)', -->
+						<!-- accentSoft: '#e0f5f0', -->
+						<!-- image: 'images/22.png', -->
+						<!-- title: 'Agriculture & agro-industrie', -->
+						<!-- subtabs: ['Potentiel', 'Sud saharien', 'Transformation'], -->
+						<!-- intro: "15 % du PIB — 34 Mds$ : un secteur clé porté par un potentiel de terres encore largement sous-exploité.", -->
+						<!-- features: [ -->
+						<!-- "8 M+ hectares cultivables sous-exploités : un déficit alimentaire devenu débouché.", -->
+						<!-- "Sud saharien : serres, agro-tech, irrigation intelligente.", -->
+						<!-- "Transformation, emballage, logistique frigorifique." -->
+						<!-- ] -->
+					<!-- }, -->
+					<!-- 2: { -->
+						<!-- accent: 'var(--purple)', -->
+						<!-- accentSoft: '#e7dcf3', -->
+						<!-- image: 'images/33.png', -->
+						<!-- title: 'Industrie & manufacturing', -->
+						<!-- subtabs: ['Substitution', 'Filières ciblées', 'Croissance'], -->
+						<!-- intro: "+6,4 % de croissance en 2025 : des zones industrielles saturées ouvrent la voie à de nouveaux investissements.", -->
+						<!-- features: [ -->
+						<!-- "Zones industrielles saturées : substitution aux importations.", -->
+						<!-- "Électronique, automobile, textile, pharmaceutique — filières ciblées.", -->
+						<!-- "Croissance industrielle cumulée de +18 % en 2025." -->
+						<!-- ] -->
+					<!-- }, -->
+					<!-- 3: { -->
+						<!-- accent: 'var(--teal-dark)', -->
+						<!-- accentSoft: '#dcecee', -->
+						<!-- image: 'images/44.png', -->
+						<!-- title: 'Énergies renouvelables', -->
+						<!-- subtabs: ['Solaire & éolien', 'Hydrogène vert', 'Financements'], -->
+						<!-- intro: "15 000 MW d'ENR d'ici 2035 : des mégaprojets ouverts aux investisseurs nationaux et internationaux.", -->
+						<!-- features: [ -->
+						<!-- "Solaire PV et éolien : mégaprojets ouverts aux investisseurs.", -->
+						<!-- "Hydrogène vert : potentiel d'export vers l'Europe.", -->
+						<!-- "Financements BAD et partenariats internationaux actifs." -->
+						<!-- ] -->
+					<!-- }, -->
+					<!-- 4: { -->
+						<!-- accent: 'var(--pink)', -->
+						<!-- accentSoft: '#f6dbe7', -->
+						<!-- image: 'images/55.png', -->
+						<!-- title: 'Technologie & digital', -->
+						<!-- subtabs: ['Start-up', 'Propriété intellectuelle', 'Économie numérique'], -->
+						<!-- intro: "1 million de diplômés par an : un vivier de talents qui alimente une économie numérique en pleine accélération.", -->
+						<!-- features: [ -->
+						<!-- "Incubateurs, start-up, fintech, e-commerce en forte croissance.", -->
+						<!-- "Coopération algéro-américaine sur la propriété intellectuelle et l'innovation.", -->
+						<!-- "Une économie numérique en pleine accélération." -->
+						<!-- ] -->
+					<!-- }, -->
+					<!-- 5: { -->
+						<!-- accent: 'var(--gold)', -->
+						<!-- accentSoft: '#f2e3cd', -->
+						<!-- image: 'images/11.png', -->
+						<!-- title: 'Mines & ressources stratégiques', -->
+						<!-- subtabs: ['Ressources critiques', 'Exploration', 'Partenariats'], -->
+						<!-- intro: "Loi minière 2025 : de nouveaux gisements s'ouvrent à l'exploration étrangère et aux partenariats industriels.", -->
+						<!-- features: [ -->
+						<!-- "Phosphate, zinc, lithium, minerais critiques.", -->
+						<!-- "Nouveaux gisements ouverts à l'exploration étrangère.", -->
+						<!-- "Partenariats industriels facilités dès 2026." -->
+						<!-- ] -->
+					<!-- } -->
+				<!-- }; -->
+				
+				<!-- const featureIcons = [ -->
+				<!-- '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M8 9h8M8 13h5"/></svg>', -->
+				<!-- '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M3 11h18"/></svg>', -->
+				<!-- '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="M15 8h3M15 12h3M6 17h12"/></svg>', -->
+				<!-- '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="3"/><path d="M12 11c-4 0-6 2-6 5v2h12v-2c0-3-2-5-6-5z"/></svg>' -->
+				<!-- ]; -->
+				
+				<!-- const panel = document.querySelector('.panel'); -->
+				<!-- const hexItems = document.querySelectorAll('.hex-item'); -->
+				
+				<!-- // add the connector "stem" shape to every hexagon -->
+				<!-- document.querySelectorAll('.hex').forEach(hex => { -->
+					<!-- const stem = document.createElement('div'); -->
+					<!-- stem.className = 'stem'; -->
+					<!-- hex.appendChild(stem); -->
+				<!-- }); -->
+				
+				<!-- function renderStep(step){ -->
+					<!-- const data = stepData[step]; -->
+					
+					<!-- // accent theming -->
+					<!-- panel.style.setProperty('--accent', data.accent); -->
+					<!-- panel.style.setProperty('--accent-soft', data.accentSoft); -->
+					
+					<!-- // title -->
+					<!-- document.getElementById('panelTitle').textContent = data.title; -->
+					<!-- document.getElementById('panelIntro').textContent = data.intro; -->
+					
+					<!-- // visual image -->
+					<!-- document.getElementById('panelImage').src = data.image; -->
+					<!-- document.getElementById('panelImage').alt = data.title; -->
+					
+					<!-- // features -->
+					<!-- const featureList = document.getElementById('featureList'); -->
+					<!-- featureList.innerHTML = data.features.map((text, i) => ` -->
+					<!-- <div class="feature"> -->
+					<!-- <div class="ic">${featureIcons[i % featureIcons.length]}</div> -->
+					<!-- <p>${text}</p> -->
+					<!-- </div> -->
+					<!-- `).join(''); -->
+					
+					<!-- // hexagon active states -->
+					<!-- hexItems.forEach(item => { -->
+						<!-- const isActive = item.dataset.step === String(step); -->
+						<!-- item.querySelector('.hex').classList.toggle('active', isActive); -->
+					<!-- }); -->
+				<!-- } -->
+				
+				<!-- hexItems.forEach(item => { -->
+					<!-- item.addEventListener('click', () => renderStep(item.dataset.step)); -->
+					<!-- item.addEventListener('keydown', (e) => { -->
+						<!-- if (e.key === 'Enter' || e.key === ' ') { -->
+							<!-- e.preventDefault(); -->
+							<!-- renderStep(item.dataset.step); -->
+						<!-- } -->
+					<!-- }); -->
+				<!-- }); -->
+				
+				<!-- // initial render — Agriculture & agro-industrie selected by default -->
+				<!-- renderStep(1); -->
+			<!-- </script> -->
+			
+		</section>
+		
+		<!-- essaisection-claire -->
+		
+		<!-- miza-section -->
+		
+		<section style="background:#080c1f;">
+			
+			<div class="wrap"style="padding-top:100px;padding-bottom:50px;">
+				
+				<header class="dz-invest__header">
+					<img src="images/logo-invest-gold.png" alt="Description"style="width:30%;padding-bottom:20px;">
+					<h1>Une offre 360°, de l'information à l'implantation</h1>
+					<p>Quatre pôles d'expertise complémentaires, conçus pour sécuriser chaque étape de votre projet d'investissement en Algérie.</p>
+				</header>
+				
+				<div class="grid">
+					
+					<div class="card c1">
+						<div class="badge">
+							<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M4 21V6a1 1 0 0 1 1-1h6v16M11 21V3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v18M4 21h16M7 9h1M7 13h1M15 6h1M15 9h1M15 13h1"/></svg>
+						</div>
+						<div class="photo"></div>
+						<div class="card-inner">
+							<h3>Abonnements & veille stratégique</h3>
+							<ul style="padding-left:30px;">
+								<li>Veille économique — Algeria INVEST</li>
+								<li>Veille juridique — Legal INVEST</li>
+								<li>Alertes réglementaires en temps réel</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="card c2">
+						<div class="badge">
+							<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><rect x="4" y="6" width="16" height="13" rx="2"/><path d="M9 6V4a3 3 0 0 1 6 0v2"/></svg>
+						</div>
+						<div class="photo"></div>
+						<div class="card-inner">
+							<h3>Mise en relation d'affaires</h3>
+							<ul style="padding-left:30px;">
+								<li>Recherche de partenaires B2B ciblés</li>
+								<li>Détection d'opportunités qualifiées</li>
+								<li>Accès au réseau Algeria Tenders®</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="card c3">
+						<div class="badge">
+							<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><path d="M4 21V6a1 1 0 0 1 1-1h6v16M11 21V3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v18M4 21h16M7 9h1M7 13h1M15 6h1M15 9h1M15 13h1"/></svg>
+						</div>
+						<div class="photo"></div>
+						<div class="card-inner">
+							<h3>Accompagnement opérationnel</h3>
+							<ul style="padding-left:30px;">
+								<li>Assistance AAPI et administrative</li>
+								<li>Création d'entreprise (CNRC, fiscal)</li>
+								<li>Implantation, financement, export</li>
+							</ul>      
+						</div>
+					</div>
+					
+					<div class="card c4">
+						<div class="badge">
+							<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6"><rect x="4" y="6" width="16" height="13" rx="2"/><path d="M9 6V4a3 3 0 0 1 6 0v2"/></svg>
+						</div>
+						<div class="photo"></div>
+						<div class="card-inner">
+							<h3>Études, analyses & due diligence</h3>
+							<ul style="padding-left:30px;">
+								<li>Études de marché et sectorielles</li>
+								<li>Faisabilité — ROI, TRI, VAN</li>
+								<li>Due diligence juridique et financière</li>
+							</ul>      
+						</div>
+					</div>
+					
+				</div>
+				
+				<div class="cta-row">
+					<button class="cta">Explore 
+						<svg viewBox="0 0 24 24" fill="none" stroke="#0b1230" stroke-width="2.2"><path d="M7 17L17 7M9 7h8v8"/></svg>
+					</button>
+				</div>
+			</div>
+			
+			
+		</section>
+		
+		
+		
+		
+		
+		<!-- miza-section-end -->
+		
+		<!-- ================= workshop-section================= -->
+		
+		<section class="section-workshop">
+			<div class="wrap">
+				
+				
+				<a href="#" class="logo-workshop">
+					<img src="images/workshop-logo.png" alt="Description">	
+				</a>
+				
+				<div class="section-header">
+					<div class="title-row">
+						<h2>6 ateliers pratiques pour réussir votre investissement</h2>
+						<div class="title-line"></div>
+					</div>
+					<p class="subtitle"style="margin-bottom:15px;font-weight:100;">Des sessions conçues par nos experts pour donner aux investisseurs les clés concrètes du marché algérien — cadre légal, création d'entreprise, financement, conformité, réseau et due diligence.</p>
+				</div>
+				
+			
+				
+				<div class="incentive-panel">
+					
+					<img class="incentive-bg" src="images/workshop.png" alt="Skyline">
+					
+					<div class="incentive-triangle"></div>
+					<div class="incentive-panel-fade"></div>
+					
+					<div class="incentive-stats">
+						<div class="incentive-stat is-accent">
+							<div class="is-num">WS-01 </br><span>1 jour</span></div>
+							<p>Investir en Algérie : cadre légal & opportunités</p>
+						</div>
+						<div class="incentive-stat">
+							<div class="is-num">WS-02 </br><span>1 jour</span></div>
+							<p>Créer & implanter son entreprise en Algérie</p>
+						</div>
+						<div class="incentive-stat">
+							<div class="is-num">WS-03 </br><span>0,5 jour</span></div>
+							<p>Financement & structuration de projets</p>
+						</div>
+						<div class="incentive-stat">
+							<div class="is-num">WS-04 </br><span>0,5 jour</span></div>
+							<p>Veille juridique & conformité réglementaire</p>
+						</div>
+						<div class="incentive-stat">
+							<div class="is-num">WS-05 </br><span>0,5 jour</span></div>
+							<p>Sur les zones économiques spéciales et programmes dédiés</p>
+						</div>
+						<div class="incentive-stat">
+							<div class="is-num">WS-06 </br><span>0,5 jour</span></div>
+							<p>Due diligence & sécurisation des investissements</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		
+		
+		<!-- section-step-by-step -->
+		
+		
+		<section class="process">
+			
+			<div class="process__glow process__glow--a"></div>
+			<div class="process__glow process__glow--b"></div>
+			
+			<div class="process__header">
+				<span class="process__eyebrow">05 — Approche & valeur ajoutée</span>
+				<h2>De la décision à l'implantation, un parcours en 5 étapes</h2>
+				<p>Une méthodologie structurée et transparente pour sécuriser votre investissement en Algérie, du diagnostic initial au suivi post-implantation.</p>
+			</div>
+			
+			<div class="process__track">
+				<div class="process__line"></div>
+				
+				<div class="process__step process__step--up">
+					<div class="process__node">01</div>
+					<div class="process__card">
+						<div class="process__icon">
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m20 20-4.3-4.3"/></svg>
+						</div>
+						<h3>Diagnostic &amp; cadrage</h3>
+						<p>Analyse des objectifs, du secteur et du modèle ; identification des enjeux, risques et opportunités.</p>
+					</div>
+				</div>
+				
+				<div class="process__step process__step--down">
+					<div class="process__node">02</div>
+					<div class="process__card">
+						<div class="process__icon">
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 20V10M11 20V4M18 20v-7"/><path d="M2 20h20"/></svg>
+						</div>
+						<h3>Étude &amp; analyse</h3>
+						<p>Marché, faisabilité, due diligence, cadre réglementaire ; modélisation financière et livrables écrits.</p>
+					</div>
+				</div>
+				
+				<div class="process__step process__step--up">
+					<div class="process__node">03</div>
+					<div class="process__card">
+						<div class="process__icon">
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="6" cy="7" r="2.6"/><circle cx="18" cy="7" r="2.6"/><circle cx="12" cy="18" r="2.6"/><path d="M8.2 8.4 10 16M15.8 8.4 14 16M8.4 6.2h7.2"/></svg>
+						</div>
+						<h3>Mise en relation</h3>
+						<p>Activation du réseau : partenaires, fournisseurs, financeurs. Facilitation des rencontres B2B.</p>
+					</div>
+				</div>
+				
+				<div class="process__step process__step--down">
+					<div class="process__node">04</div>
+					<div class="process__card">
+						<div class="process__icon">
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3 4 6.5v5.2C4 16.9 7.4 20.8 12 22c4.6-1.2 8-5.1 8-10.3V6.5L12 3Z"/><path d="m8.6 12 2.4 2.4 4.4-4.4"/></svg>
+						</div>
+						<h3>Accompagnement opérationnel</h3>
+						<p>AAPI, CNRC, conformité, implantation, ouverture bancaire. Suivi complet des formalités.</p>
+					</div>
+				</div>
+				
+				<div class="process__step process__step--up">
+					<div class="process__node">05</div>
+					<div class="process__card">
+						<div class="process__icon">
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 6 9 17l-5-5"/></svg>
+						</div>
+						<h3>Implantation</h3>
+						<p>La solution est ancrée, adoptée et pleinement opérationnelle.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- section-talents -->
+		
+		<section class="section-talents">
+			
+			
+			<div class="content"style="margin-top:30px;">
+				
+				<div class="header-row"style="margin-bottom:60px;">
+					<div class="line"></div>
+					<div class="badge12">
+						<div class="flag-icon">
+							<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M4 6h16v3H4z" fill="#ffffff"/>
+								<path d="M4 11h16v2H4z" fill="#ffffff"/>
+								<path d="M4 15h10v3H4z" fill="#ffffff"/>
+							</svg>
+						</div>
+						<h1>Pourquoi choisir Algeria INVEST ®</h1>
+					</div>
+					
+					<div class="line"></div>
+				</div>
+				
+				<p style="color:black;text-align:center;margin-bottom:90px;font-size:20px;">Six raisons qui font de notre plateforme le partenaire de référence pour investir en Algérie en toute confiance.</p>
+				
+				<div class="cards">
+					
+					<div class="cardd card1">
+						<div class="tint"></div>
+						<div class="hexbg" style="background-image:url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2246%22 height=%2240%22><polygon points=%2223,0 46,12 46,28 23,40 0,28 0,12%22 fill=%22none%22 stroke=%22rgba(255,255,255,0.6)%22 stroke-width=%221%22/></svg>');"></div>
+						<div class="card-content">
+							<div class="icon-circle">
+								<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="12" cy="7" r="4" fill="#1560a8"/>
+									<path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="#1560a8" stroke-width="2" stroke-linecap="round"/>
+								</svg>
+							</div>
+							<div class="statss">Expertise locale</div>
+							<div class="desc">Une équipe implantée en Algérie, qui connaît les codes administratifs, culturels et réglementaires. Nous anticipons les obstacles avant qu'ils n'apparaissent.</div>
+						</div>
+					</div>
+					
+					<div class="cardd card2">
+						<div class="tint"></div>
+						<div class="hexbg" style="background-image:url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2246%22 height=%2240%22><polygon points=%2223,0 46,12 46,28 23,40 0,28 0,12%22 fill=%22none%22 stroke=%22rgba(255,255,255,0.6)%22 stroke-width=%221%22/></svg>');"></div>
+						<div class="card-content">
+							<div class="icon-circle">
+								<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M12 3c-2.5 1.5-4 4-4 7 0 5 3 8 4 11 1-3 4-6 4-11 0-3-1.5-5.5-4-7z" fill="#b58e39"/>
+									<circle cx="12" cy="9" r="2.4" fill="#ffffff"/>
+								</svg>
+							</div>
+							<div class="statss">Vision internationale</div>
+							<div class="desc">Compréhension des attentes des investisseurs étrangers. Nous traduisons la réalité algérienne en critères de décision clairs et actionnables.</div>
+						</div>
+					</div>
+					
+					<div class="cardd card3">
+						<div class="tint"></div>
+						<div class="hexbg" style="background-image:url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2246%22 height=%2240%22><polygon points=%2223,0 46,12 46,28 23,40 0,28 0,12%22 fill=%22none%22 stroke=%22rgba(255,255,255,0.6)%22 stroke-width=%221%22/></svg>');"></div>
+						<div class="card-content">
+							<div class="icon-circle">
+								<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="10" cy="10" r="6" stroke="#12354f" stroke-width="2"/>
+									<path d="M15 15l6 6" stroke="#12354f" stroke-width="2" stroke-linecap="round"/>
+									<circle cx="10" cy="10" r="2" fill="#12354f"/>
+								</svg>
+							</div>
+							<div class="statss">Offre 360° intégrée</div>
+							<div class="desc">De l'information à l'implantation, un seul partenaire couvre l'ensemble du parcours. Pas de fragmentation ni de discontinuité.</div>
+						</div>
+					</div>
+					
+					<div class="cardd card4">
+						<div class="tint"></div>
+						<div class="hexbg" style="background-image:url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2246%22 height=%2240%22><polygon points=%2223,0 46,12 46,28 23,40 0,28 0,12%22 fill=%22none%22 stroke=%22rgba(255,255,255,0.6)%22 stroke-width=%221%22/></svg>');"></div>
+						<div class="card-content">
+							<div class="icon-circle">
+								<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<circle cx="12" cy="12" r="8" stroke="#8a6a1f" stroke-width="2"/>
+									<path d="M4 12h16M12 4c2.5 2.2 2.5 13.8 0 16M12 4c-2.5 2.2-2.5 13.8 0 16" stroke="#8a6a1f" stroke-width="1.5"/>
+									<path d="M17 7l3-1-1 3z" fill="#8a6a1f"/>
+								</svg>
+							</div>
+							<div class="statss">Réseau institutionnel établi</div>
+							<div class="desc">Relations privilégiées avec l'AAPI, les ministères, les banques et les acteurs économiques clés — accès accéléré aux décideurs.</div>
+						</div>
+					</div>
+					
+					<div class="cardd card5">
+						<div class="tint"></div>
+						<div class="hexbg" style="background-image:url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2246%22 height=%2240%22><polygon points=%2223,0 46,12 46,28 23,40 0,28 0,12%22 fill=%22none%22 stroke=%22rgba(255,255,255,0.6)%22 stroke-width=%221%22/></svg>');"></div>
+						<div class="card-content">
+							<div class="icon-circle">
+								<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M4 19V9l8-5 8 5v10" stroke="#b0700e" stroke-width="2" stroke-linejoin="round"/>
+									<path d="M9 19v-6h6v6" stroke="#b0700e" stroke-width="2" stroke-linejoin="round"/>
+								</svg>
+							</div>
+							<div class="statss">Rigueur analytique</div>
+							<div class="desc">Des livrables structurés et actionnables — études de marché, due diligences, plans de financement — au niveau des standards des cabinets internationaux.</div>
+						</div>
+					</div>
+					
+					<div class="cardd card6">
+						<div class="tint"></div>
+						<div class="hexbg" style="background-image:url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%2246%22 height=%2240%22><polygon points=%2223,0 46,12 46,28 23,40 0,28 0,12%22 fill=%22none%22 stroke=%22rgba(255,255,255,0.6)%22 stroke-width=%221%22/></svg>');"></div>
+						<div class="card-content">
+							<div class="icon-circle">
+								<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M3 17l6-6 4 4 8-8" stroke="#1560a8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M15 7h6v6" stroke="#1560a8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+							<div class="statss">Partenariat de confiance</div>
+							<div class="desc">Nous accompagnons nos clients dans la durée. Notre succès est directement lié à la réussite de leurs projets — transparence et éthique.</div>
+						</div>
+					</div>
+					
+				</div>
+				<!-- CTA -->
+				<div class="wrap"style="margin-top:100px;">
+					<div class="cta-band" id="contact">
+						<h2>Un projet d'investissement en Algérie ? Parlons-en avec un conseiller.</h2>
+						<div class="cta-actions">
+							<a href="mailto:contact@algeria-invest.dz" class="btn-primary">Prendre contact</a>
+							<a href="#" class="btn-secondary">Centre d'appel</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</section>
+		
+		
+		
+		
+		
+		<!-- FOOTER -->
+		<footer>
+			<div class="wrap">
+				<div class="foot-grid">
+					<div class="foot-brand">
+						<a href="#" class="logo"><span class="logo-mark"></span>Algeria <span class="gold">INVEST</span></a>
+						<p>Plateforme institutionnelle de promotion et d'accompagnement de l'investissement en Algérie.</p>
+					</div>
+					<div class="foot-col"><h5>Explorer</h5><a href="#secteurs">Secteurs</a><a href="#regions">Régions</a><a href="#programmes">Programmes</a></div>
+					<div class="foot-col"><h5>Réglementation</h5><a href="#reglementaire">Licences</a><a href="#reglementaire">Lois & accords</a><a href="#">Incitations</a></div>
+					<div class="foot-col"><h5>Ressources</h5><a href="#">Guides sectoriels</a><a href="#">Actualités</a><a href="#">Événements</a></div>
+					<div class="foot-col"><h5>Contact</h5><a href="mailto:contact@algeria-invest.dz">contact@algeria-invest.dz</a><a href="#">Centre d'appel investisseurs</a><a href="#">Alger, Algérie</a></div>
+				</div>
+				<div class="foot-bottom">
+					<span>© 2026 Algeria Invest. Tous droits réservés.</span>
+					<span>Design system Navy / Blue / Gold</span>
+				</div>
+			</div>
+		</footer>
+		
+		<script src="script.js" defer></script>
+	</body>
+</html>
+<script>
+	(function () {
+		var root = document.getElementById('dzInvest');
+		if (!root) return;
+		
+		var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+		
+		function formatNumber(value, decimals) {
+			return value.toLocaleString('fr-FR', {
+				minimumFractionDigits: decimals,
+				maximumFractionDigits: decimals
+			});
+		}
+		
+		function animateCount(el) {
+			var target = parseFloat(el.getAttribute('data-target'));
+			var decimals = parseInt(el.getAttribute('data-decimals') || '0', 10);
+			var prefix = el.getAttribute('data-prefix') || '';
+			if (reduceMotion || isNaN(target)) {
+				el.textContent = prefix + formatNumber(target, decimals);
+				return;
+			}
+			var duration = 1400;
+			var start = null;
+			
+			function step(ts) {
+				if (start === null) start = ts;
+				var progress = Math.min((ts - start) / duration, 1);
+				var eased = 1 - Math.pow(1 - progress, 3);
+				var current = target * eased;
+				el.textContent = prefix + formatNumber(current, decimals);
+				if (progress < 1) requestAnimationFrame(step);
+				else el.textContent = prefix + formatNumber(target, decimals);
+			}
+			requestAnimationFrame(step);
+		}
+		
+		function revealItems(container) {
+			var items = container.querySelectorAll('[data-reveal-item]');
+			items.forEach(function (item, index) {
+				setTimeout(function () {
+					item.classList.add('dz-in');
+					var num = item.querySelector('.dz-num');
+					if (num) animateCount(num);
+				}, reduceMotion ? 0 : index * 80);
+			});
+		}
+		
+		var revealed = new WeakSet();
+		
+		var observer = new IntersectionObserver(function (entries) {
+			entries.forEach(function (entry) {
+				if (entry.isIntersecting && !revealed.has(entry.target)) {
+					revealed.add(entry.target);
+					entry.target.classList.add('dz-in');
+					revealItems(entry.target);
+					observer.unobserve(entry.target);
+				}
+			});
+		}, { threshold: 0.15 });
+		
+		root.querySelectorAll('[data-reveal]').forEach(function (card) {
+			observer.observe(card);
+		});
+	})();
+</script>
