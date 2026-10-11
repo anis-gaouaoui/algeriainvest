@@ -12,11 +12,8 @@
             Algérie
         </title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,400&family=Fraunces:ital,wght@1,300;1,900&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="main.css" />
     </head>
     <body>
         <header>
@@ -250,7 +247,7 @@
             </div>
         </header>
 
-        <!-- HERO SLIDER : le fond change, le texte reste fixe -->
+        <!-- HERO : vidéos en fond indépendantes + slide de 4 textes -->
         <section class="hero" id="hero-slider">
             <div class="hero-bg-layers">
                 <div class="hero-bg b1 active">
@@ -286,372 +283,70 @@
             <div class="hero-bottom-fade"></div>
 
             <div class="wrap hero-fixed-content">
-                <h1 class="hero-h1">
-                    Investissez dans l'économie la plus<br />
-                    diversifiée du Maghreb
-                </h1>
-                <p class="lead">
-                    Un guichet unique, un cadre juridique stabilisé et un accès
-                    direct aux marchés africain et méditerranéen.
-                </p>
-
-                <div class="hero-pills">
-                    <a href="#secteurs" class="pill-btn"
-                        >Demander un rendez-vous ↗</a
-                    >
-                    <a href="#matchmaking" class="pill-btn"
-                        >Découvrir nos services ↗</a
-                    >
+                <div class="hero-slides">
+                    <div class="hero-slide active">
+                        <span class="eyebrow">ALGERIA INVEST® by i2b SPA · Private Investment Platform</span>
+                        <h1 class="hero-h1">INVESTIR EN ALGÉRIE, AVEC UNE LECTURE LOCALE ET UNE APPROCHE STRUCTURÉE</h1>
+                        <p class="lead">Algeria INVEST® accompagne les investisseurs et les entreprises dans l’analyse, la structuration et la mise en œuvre de leurs projets en Algérie.</p>
+                        <p class="hero-sub">Nous aidons les investisseurs à comprendre le marché algérien, à évaluer les conditions d’entrée, à structurer leur projet et à engager leur implantation avec une vision claire des enjeux locaux.</p>
+                        <div class="hero-pills"><a href="#nx-approche" class="pill-btn">Découvrir notre approche →</a><a href="#nx-approche" class="pill-btn">Découvrir nos services →</a></div>
+                    </div>
+                    <div class="hero-slide" aria-hidden="true">
+                        <span class="eyebrow">Cadre Légal | Market insight</span>
+                        <h2 class="hero-h1">INVESTIR EN ALGÉRIE : CE QUI A CHANGÉ</h2>
+                        <p class="lead">Depuis 2022, le cadre de l’investissement a évolué : Loi 22-18, AAPI, évolution du régime applicable aux investissements étrangers, garanties de transfert des capitaux et revenus et nouveaux régimes d’incitation.</p>
+                        <p class="hero-sub">Ce que ces évolutions changent concrètement pour l’investisseur.</p>
+                        <div class="hero-pills"><a href="#" class="pill-btn">Investir en Algérie →</a><a href="#nx-cadre" class="pill-btn">Décrypter le cadre légal →</a><a href="#" class="pill-btn">Market Insight →</a><a href="#" class="pill-btn">Legal Invest →</a></div>
+                    </div>
+                    <div class="hero-slide" aria-hidden="true">
+                        <span class="eyebrow">Opportunités d’investissement</span>
+                        <h2 class="hero-h1">INVESTIR EN ALGÉRIE, EN TOUTE CONFIANCE.</h2>
+                        <p class="lead">Explorez les opportunités, secteurs et projets à potentiel.</p>
+                        <p class="hero-sub hero-sub--pipes"><span>Des opportunités identifiées</span><i>|</i><span>Des marchés à comprendre</span><i>|</i><span>Des projets à structurer</span></p>
+                        <div class="hero-pills"><a href="#nx-secteurs" class="pill-btn">Explorer les opportunités →</a></div>
+                    </div>
+                    
                 </div>
             </div>
+
+            <button class="hero-arrow hero-arrow--prev" id="hero-prev" aria-label="Texte précédent">‹</button>
+            <button class="hero-arrow hero-arrow--next" id="hero-next" aria-label="Texte suivant">›</button>
 
             <div class="wrap hero-bottom">
                 <div class="hero-bottom-row">
                     <div class="hero-progress">
-                        <button
-                            class="ctrl-slide active"
-                            data-slide="0"
-                            aria-label="Slide 1"
-                        >
-                            <span class="track"
-                                ><span class="gauge"></span
-                            ></span>
-                        </button>
-                        <button
-                            class="ctrl-slide"
-                            data-slide="1"
-                            aria-label="Slide 2"
-                        >
-                            <span class="track"
-                                ><span class="gauge"></span
-                            ></span>
-                        </button>
-                        <button
-                            class="ctrl-slide"
-                            data-slide="2"
-                            aria-label="Slide 3"
-                        >
-                            <span class="track"
-                                ><span class="gauge"></span
-                            ></span>
-                        </button>
-                    </div>
-                    <div class="hero-controls">
-                        <button
-                            class="ctrl-btn"
-                            id="hero-toggle"
-                            aria-label="Mettre en pause"
-                        >
-                            ⏸
-                        </button>
-                        <button
-                            class="ctrl-btn"
-                            id="hero-fullscreen"
-                            aria-label="Plein écran"
-                        >
-                            ⤢
-                        </button>
+                        <button class="ctrl-slide active" data-slide="0"><span class="track"><span class="gauge"></span></span><span class="ctrl-label">01 — Notre approche</span></button>
+                        <button class="ctrl-slide" data-slide="1"><span class="track"><span class="gauge"></span></span><span class="ctrl-label">02 — Cadre légal</span></button>
+                        <button class="ctrl-slide" data-slide="2"><span class="track"><span class="gauge"></span></span><span class="ctrl-label">03 — Opportunités</span></button>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="dz-invest" id="dzInvest">
-            <img
-                class="dz-invest__bg"
-                src="images/bg.webp"
-                alt=""
-                aria-hidden="true"
-            />
-            <img
-                class="dz-invest__globe"
-                src="images/sa.webp"
-                alt=""
-                aria-hidden="true"
-            />
+        <main>
+<div class="nx">
+<section class="nx-sec" id="nx-story">
+  <div class="nx-w nx-split">
+    <div>
+      <p class="nx-eye">Pourquoi investir en Algérie</p>
+      <h2 class="nx-h2">Pourquoi l’Algérie, <span>pourquoi maintenant ?</span></h2>
+      <p class="nx-p">L’Algérie connaît une transformation progressive de son environnement économique et réglementaire. Les réformes engagées depuis 2022 ont renouvelé le cadre de l’investissement, tandis que les politiques publiques accordent une place croissante à la diversification, à l’industrialisation, à la valorisation des ressources et au développement des infrastructures.</p>
+      <p class="nx-quote">Pour l’investisseur, l’enjeu consiste à identifier où se trouvent les opportunités, dans quelles conditions elles peuvent être exploitées et quel modèle d’implantation est le plus adapté.</p>
 
-            <div class="dz-invest__map"></div>
+	
+	</div>
+  <figure class="nx-sq"><img src="images/alger-bg.jpg" alt="" loading="lazy" /></figure>
+  </div>
+</section>
+</div>
 
-            <div class="dz-invest__inner">
-                <header class="dz-invest__header">
-                    <h2>Pourquoi investir en Algérie</h2>
-                    <h1>Un marché en transformation profonde</h1>
-                    <p>
-                        L'Algérie s'inscrit dans une dynamique de transformation
-                        économique portée par un ensemble de réformes destinées
-                        à renforcer l'attractivité du territoire, améliorer le
-                        climat des affaires et favoriser l'investissement
-                        productif.
-                    </p>
-                </header>
-
-                <div class="dz-invest__row">
-                    <!-- CARTE 1 : VUE MACROECONOMIQUE -->
-                    <div class="dz-card" data-reveal>
-                        <div class="dz-card__head">
-                            <span class="dz-card__icon">
-                                <svg
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="1.6"
-                                >
-                                    <circle cx="12" cy="12" r="9" />
-                                    <path
-                                        d="M3 12h18M12 3c2.8 2.6 4.2 6 4.2 9s-1.4 6.4-4.2 9c-2.8-2.6-4.2-6-4.2-9s1.4-6.4 4.2-9Z"
-                                    />
-                                </svg>
-                            </span>
-                            <h2>Vue macroéconomique</h2>
-                        </div>
-
-                        <div class="dz-sub">
-                            <h3>Attractivité de l'investissement</h3>
-                            <p>
-                                Signaux de confiance des investisseurs et
-                                dynamique des flux de capitaux.
-                            </p>
-                            <div class="dz-stats">
-                                <div class="dz-stat" data-reveal-item>
-                                    <div class="dz-stat__value">
-                                        <span
-                                            class="dz-num"
-                                            data-target="1.43"
-                                            data-decimals="2"
-                                            >0</span
-                                        >
-                                        <span class="dz-unit">Md$</span>
-                                    </div>
-                                    <div class="dz-stat__label">
-                                        Flux d'IDE en 2024
-                                    </div>
-                                </div>
-                                <div class="dz-stat" data-reveal-item>
-                                    <div class="dz-stat__value">
-                                        <span
-                                            class="dz-num"
-                                            data-target="18"
-                                            data-decimals="0"
-                                            data-prefix="+"
-                                            >0</span
-                                        ><span class="dz-unit">%</span>
-                                    </div>
-                                    <div class="dz-stat__label">
-                                        Croissance des flux d'IDE en 2024,
-                                        contre -11 % au niveau mondial
-                                    </div>
-                                </div>
-                                <div class="dz-stat" data-reveal-item>
-                                    <div class="dz-stat__value">
-                                        <span
-                                            class="dz-num"
-                                            data-target="48"
-                                            data-decimals="0"
-                                            >0</span
-                                        >
-                                        <span class="dz-unit">Mds$</span>
-                                    </div>
-                                    <div class="dz-stat__label">
-                                        Investis dans les mégaprojets entre 2021
-                                        et 2024
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="dz-sub">
-                            <h3>Marché &amp; population</h3>
-                            <p>
-                                Un accès direct à un bassin de consommation et
-                                une base industrielle en expansion.
-                            </p>
-                            <div class="dz-stats dz-stats--two">
-                                <div class="dz-stat" data-reveal-item>
-                                    <div class="dz-stat__value">
-                                        <span
-                                            class="dz-num"
-                                            data-target="1.4"
-                                            data-decimals="1"
-                                            >0</span
-                                        >
-                                        <span class="dz-unit">Md</span>
-                                    </div>
-                                    <div class="dz-stat__label">
-                                        Consommateurs accessibles via la ZLECAf
-                                    </div>
-                                </div>
-                                <div class="dz-stat" data-reveal-item>
-                                    <div class="dz-stat__value">
-                                        <span
-                                            class="dz-num"
-                                            data-target="18"
-                                            data-decimals="0"
-                                            data-prefix="+"
-                                            >0</span
-                                        ><span class="dz-unit">%</span>
-                                    </div>
-                                    <div class="dz-stat__label">
-                                        Croissance industrielle cumulée en 2025
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="dz-sub dz-sub--tight">
-                            <h3>Positionnement</h3>
-                            <div class="dz-tags">
-                                <span class="dz-tag" data-reveal-item
-                                    >Europe</span
-                                >
-                                <span class="dz-tag" data-reveal-item
-                                    >Maghreb</span
-                                >
-                                <span class="dz-tag" data-reveal-item
-                                    >Afrique</span
-                                >
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- CARTE 2 : CADRE REGLEMENTAIRE -->
-                    <div class="dz-card" data-reveal>
-                        <div class="dz-card__head">
-                            <span class="dz-card__icon">
-                                <svg
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    stroke-width="1.6"
-                                >
-                                    <path
-                                        d="M12 3v3M12 18v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M3 12h3M18 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"
-                                    />
-                                    <circle cx="12" cy="12" r="4" />
-                                </svg>
-                            </span>
-                            <h2>Cadre réglementaire</h2>
-                        </div>
-
-                        <div class="dz-sub">
-                            <h3>Réformes engagées depuis 2022</h3>
-                            <p>
-                                Un ensemble de réformes destinées à renforcer
-                                l'attractivité du territoire, améliorer le
-                                climat des affaires et favoriser
-                                l'investissement productif.
-                            </p>
-                            <div class="dz-badges">
-                                <div class="dz-badge" data-reveal-item>
-                                    <div class="dz-badge__num">51/49</div>
-                                    <div class="dz-badge__text">
-                                        Règle supprimée pour les secteurs non
-                                        stratégiques
-                                    </div>
-                                </div>
-                                <div class="dz-badge" data-reveal-item>
-                                    <div class="dz-badge__num">22-18</div>
-                                    <div class="dz-badge__text">
-                                        Nouvelle loi cadre sur l'investissement
-                                    </div>
-                                </div>
-                                <div class="dz-badge" data-reveal-item>
-                                    <div class="dz-badge__num">AAPI</div>
-                                    <div class="dz-badge__text">
-                                        Guichet unique, démarches simplifiées
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="dz-highlight" data-reveal-item>
-                            <div class="dz-highlight__value">
-                                <span
-                                    class="dz-num"
-                                    data-target="1.43"
-                                    data-decimals="2"
-                                    >0</span
-                                >
-                                Md$
-                            </div>
-                            <div class="dz-highlight__label">
-                                Flux d'investissements directs étrangers en 2024
-                            </div>
-
-                            <div class="dz-factors">
-                                <div class="dz-factor" data-reveal-item>
-                                    <span class="dz-factor__rank">01</span>
-                                    <span class="dz-factor__text"
-                                        >Réformes économiques<br /><small
-                                            >Engagées depuis 2022</small
-                                        ></span
-                                    >
-                                </div>
-                                <div
-                                    class="dz-factor dz-factor1"
-                                    data-reveal-item
-                                >
-                                    <span class="dz-factor__rank">02</span>
-                                    <span class="dz-factor__text"
-                                        >Guichet unique<br /><small
-                                            >Démarches via l'AAPI</small
-                                        ></span
-                                    >
-                                </div>
-                                <div
-                                    class="dz-factor dz-factor2"
-                                    data-reveal-item
-                                >
-                                    <span class="dz-factor__rank">03</span>
-                                    <span class="dz-factor__text"
-                                        >Diversification<br /><small
-                                            >Priorité à
-                                            l'industrialisation</small
-                                        ></span
-                                    >
-                                </div>
-                                <div
-                                    class="dz-factor dz-factor3"
-                                    data-reveal-item
-                                >
-                                    <span class="dz-factor__rank">04</span>
-                                    <span class="dz-factor__text"
-                                        >Nouveau cadre légal<br /><small
-                                            >Loi n°22-18</small
-                                        ></span
-                                    >
-                                </div>
-                            </div>
-
-                            <div class="dz-highlight__source">
-                                Source&nbsp;: Lois 2022–2025, JORADP.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="dz-invest__cta-wrap">
-                    <button class="dz-cta" type="button">
-                        <span
-                            >En savoir plus sur l'investissement en Algérie
-                            ↗</span
-                        >
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <!-- ================= sc-section : carousel secteurs d'activité ================= -->
-        <section class="secteurs-carousel" id="secteursCarousel">
+<section class="secteurs-carousel" id="secteursCarousel">
             <div class="sc-hero" id="scHero">
                 <div class="sc-heading">
                     <div class="sc-eyebrow" id="scEyebrow">
-                        <h1>5 secteurs porteurs identifiés</h1>
+                        <h2>Les 5 arguments d’investissement</h2>
                     </div>
-                    <div class="sc-subtitle">
-                        Une cartographie des filières où l'Algérie offre
-                        aujourd'hui les conditions les plus favorables à
-                        l'investissement national et international.
-                    </div>
+                    <div class="sc-subtitle">Notre lecture</div>
                 </div>
 
                 <button
@@ -672,7 +367,7 @@
                 <button
                     class="sc-nav-arrow sc-nav-prev"
                     id="scPrevBtn"
-                    aria-label="Secteur précédent"
+                    aria-label="Argument précédent"
                 >
                     <svg
                         viewBox="0 0 24 24"
@@ -686,7 +381,7 @@
                 <button
                     class="sc-nav-arrow sc-nav-next"
                     id="scNextBtn"
-                    aria-label="Secteur suivant"
+                    aria-label="Argument suivant"
                 >
                     <svg
                         viewBox="0 0 24 24"
@@ -709,707 +404,124 @@
                 </div>
             </div>
         </section>
-        <!-- ================= /sc-section ================= -->
 
-        <section class="cta-sect">
-            <!-- CTA -->
+<div class="nx">
+<section class="nx-sec nx-pale" id="nx-cadre">
+  <div class="nx-w">
+    <div class="nx-tabs" role="tablist" aria-label="Cadre de l’investissement">
+      <button role="tab" id="tab-t1" class="is-on" data-tab="t1" aria-controls="t1" aria-selected="true" tabindex="0"><small>Cadre de l’investissement</small><b>Ce qui a changé depuis 2022</b></button>
+      <button role="tab" id="tab-t2" data-tab="t2" aria-controls="t2" aria-selected="false" tabindex="-1"><small>Ce que cela change pour l’investisseur</small><b>Du changement réglementaire à l’impact business</b></button>
+    </div>
+    <div class="nx-panel is-on" id="t1" role="tabpanel" aria-labelledby="tab-t1">
+      <div class="nx-tl">
+        <article class="nx-tl__i is-on" tabindex="0"><span class="nx-tl__img" style="background-image:url('images/alger-bg.jpg')"></span><span class="nx-tl__y">2022</span><div class="nx-tl__b"><h3>Loi n° 22-18</h3><p>Nouveau cadre juridique de l’investissement.</p></div></article>
+        <article class="nx-tl__i" tabindex="0"><span class="nx-tl__img" style="background-image:url('images/bg.webp')"></span><span class="nx-tl__y">2022–2023</span><div class="nx-tl__b"><h3>Mise en place de l’AAPI</h3><p>Promotion, accompagnement et guichets uniques.</p></div></article>
+        <article class="nx-tl__i" tabindex="0"><span class="nx-tl__img" style="background-image:url('images/sa.webp')"></span><span class="nx-tl__y">2023–2025</span><div class="nx-tl__b"><h3>Déploiement des régimes d’incitation</h3><p>Secteurs · Zones · Investissements structurants.</p></div></article>
+        <article class="nx-tl__i" tabindex="0"><span class="nx-tl__img" style="background-image:url('images/contact-bg.jpg')"></span><span class="nx-tl__y">Aujourd’hui</span><div class="nx-tl__b"><h3>Un environnement à analyser projet par projet</h3><p>Secteur, localisation, structure, autorisations, fiscalité, financement et incitations.</p></div></article>
+      </div>
+    </div>
+    <div class="nx-panel" id="t2" role="tabpanel" aria-labelledby="tab-t2">
+      <div class="nx-line nx-line--head"><strong>Évolution</strong><div><p>Ce que cela signifie pour l’investisseur</p></div></div>
+      <div class="nx-line"><strong>Loi 22-18</strong><div><p>Nouveau cadre de référence pour structurer l’investissement</p></div></div>
+      <div class="nx-line"><strong>AAPI / guichets uniques</strong><div><p>Centralisation et accompagnement des démarches</p></div></div>
+      <div class="nx-line"><strong>Évolution du régime 49/51</strong><div><p>Possibilité d’investissement étranger dans la plupart des activités, sous réserve des secteurs soumis à règles spécifiques</p></div></div>
+      <div class="nx-line"><strong>Régimes d’incitation</strong><div><p>Possibilité d’identifier les dispositifs applicables au projet</p></div></div>
+      <div class="nx-line"><strong>Développement industriel</strong><div><p>Nouvelles opportunités de localisation et de partenariat</p></div></div>
+      <div class="nx-line"><strong>Développement des infrastructures</strong><div><p>Création de nouvelles chaînes de valeur et besoins associés</p></div></div>
+    </div>
+  </div>
+</section>
 
-            <div class="cta-band" id="cta-band">
-                <div>
-                    <h1>
-                        Votre projet correspond à l'un <br />de ces secteurs ?
-                    </h1>
-                    <p>
-                        Nos équipes qualifient votre opportunité et activent
-                        <br />le réseau adapté à votre filière.
-                    </p>
-                </div>
+<section class="nx-sec nx-ind" id="nx-ind">
+  <div class="nx-w">
+    <h2 class="nx-h2 nx-c">L’Algérie en <span>quelques indicateurs</span></h2>
+    <div class="nx-stats">
+      <div><b>46+ M</b><strong>Habitants</strong><span>Un marché intérieur de grande échelle.</span></div>
+      <div><b>22-18</b><strong>Loi relative à l’investissement</strong><span>Le socle du nouveau cadre de l’investissement.</span></div>
+      <div><b>3</b><strong>Régimes d’incitation</strong><span>Secteurs · Zones · Investissements structurants.</span></div>
+      <div><b>48 Mds $</b><strong>Investissements publics</strong><span>Montant communiqué pour les investissements publics réalisés entre 2021 et 2023 dans les projets structurants.</span></div>
+    </div>
+    <p class="nx-src">Sources : AAPI, JORADP, Ministère des Finances. Données et années de référence précisées pour chaque indicateur.</p>
+  </div>
+</section>
 
-                <div class="cta-actions">
-                    <a
-                        href="mailto:contact@algeria-invest.dz"
-                        class="btn-primary"
-                        >Prendre contact</a
-                    >
-                    <a href="#" class="btn-secondary">Centre d'appel</a>
-                </div>
-            </div>
-        </section>
+<section class="nx-band">
+  <div class="nx-w">
+    <h2 class="nx-h2">Le cadre existe. <span>La question est de déterminer comment il s’applique à votre projet.</span></h2>
+  </div>
+</section>
 
-        <!-- miza-section -->
+<section class="nx-sec" id="nx-secteurs">
+  <div class="nx-w">
+    <p class="nx-eye nx-c0">Où sont les opportunités ?</p>
+    <h2 class="nx-h2 nx-c">Des opportunités dans <span>plusieurs chaînes de valeur</span></h2>
+    <div class="nx-row nx-cc nx-mb"><a href="#" class="nx-btn nx-btn--navy">→ Explorer les secteurs</a></div>
+    <div class="nx-sectors">
+      <article class="nx-sc"><span class="nx-sc__img" style="background-image:url('images/images-slide-secteurs/Industrie%20%26%20manufacturing.png')"></span><div class="nx-sc__txt"><h3>INDUSTRIE</h3><p>Production · sous-traitance · intégration locale</p></div></article>
+      <article class="nx-sc"><span class="nx-sc__img" style="background-image:url('images/images-slide-secteurs/Agriculture%20%26%20agro-industrie.png')"></span><div class="nx-sc__txt"><h3>AGRO-INDUSTRIE</h3><p>Transformation · stockage · distribution</p></div></article>
+      <article class="nx-sc"><span class="nx-sc__img" style="background-image:url('images/images-slide-secteurs/%C3%89nergies%20renouvelables.png')"></span><div class="nx-sc__txt"><h3>ÉNERGIE</h3><p>Renouvelables · efficacité énergétique · services</p></div></article>
+      <article class="nx-sc"><span class="nx-sc__img" style="background-image:url('images/images-slide-secteurs/Mines%20%26%20ressources%20strat%C3%A9giques.png')"></span><div class="nx-sc__txt"><h3>MINES</h3><p>Exploration · exploitation · transformation</p></div></article>
+      <article class="nx-sc"><span class="nx-sc__img" style="background-image:url('images/bg.webp')"></span><div class="nx-sc__txt"><h3>LOGISTIQUE</h3><p>Transport · ports · entreposage · supply chain</p></div></article>
+      <article class="nx-sc"><span class="nx-sc__img" style="background-image:url('images/contact-bg.jpg')"></span><div class="nx-sc__txt"><h3>SANTÉ</h3><p>Industrie pharmaceutique · dispositifs médicaux · services</p></div></article>
+      <article class="nx-sc"><span class="nx-sc__img" style="background-image:url('images/images-slide-secteurs/Technologie%20%26%20digital.png')"></span><div class="nx-sc__txt"><h3>TECHNOLOGIES</h3><p>Digital · IT · solutions B2B · innovation</p></div></article>
+      <article class="nx-sc"><span class="nx-sc__img" style="background-image:url('images/alger-bg.jpg')"></span><div class="nx-sc__txt"><h3>TOURISME</h3><p>Hôtellerie · services · infrastructures touristiques</p></div></article>
+    </div>
+  </div>
+</section>
 
-        <section id="services" class="services-sect">
-            <div class="services-sect__glow services-sect__glow--a"></div>
-            <div class="services-sect__glow services-sect__glow--b"></div>
-            <div class="services-sect__grain"></div>
+<section class="nx-sec nx-pale" id="nx-checks">
+  <div class="nx-w nx-venue">
+    <div class="nx-venue__card"><p class="nx-eye">Avant d’investir</p><h2>Une opportunité ne se résume pas à un secteur</h2><p>Avant de s’engager, l’investisseur doit examiner :</p></div>
+    <ol class="nx-checklist">
+      <li><i>01</i><div><h3>MARCHÉ</h3><p>Taille · demande · concurrence</p></div></li>
+      <li><i>02</i><div><h3>RÉGLEMENTATION</h3><p>Conditions d’accès · autorisations · licences</p></div></li>
+      <li><i>03</i><div><h3>STRUCTURE</h3><p>Filiale · JV · partenariat · acquisition</p></div></li>
+      <li><i>04</i><div><h3>LOCALISATION</h3><p>Foncier · infrastructures · logistique</p></div></li>
+      <li><i>05</i><div><h3>ÉCONOMIE DU PROJET</h3><p>CAPEX · OPEX · financement · rentabilité</p></div></li>
+      <li><i>06</i><div><h3>INCITATIONS</h3><p>Éligibilité · régime applicable · conditions</p></div></li>
+      <li><i>07</i><div><h3>EXÉCUTION</h3><p>Partenaires · fournisseurs · recrutement · opérations</p></div></li>
+    </ol>
+  </div>
+</section>
 
-            <div class="wrap services-wrap">
-                <div class="services-top">
-                    <div class="services-top__left">
-                        <h1 class="services-kicker">
-                            Algeria INVEST<sup>®</sup>
-                        </h1>
-                        <h2 class="services-subtitle">
-                            Une offre 360°,<br />de l'information à
-                            l'implantation
-                        </h2>
-                    </div>
-                    <p class="services-lede">
-                        Quatre pôles d'expertise complémentaires, conçus pour
-                        sécuriser chaque étape de votre projet d'investissement
-                        en Algérie, de la veille stratégique jusqu'à
-                        l'implantation opérationnelle.
-                    </p>
-                </div>
+<section class="nx-sec" id="nx-approche">
+  <div class="nx-w">
+    <p class="nx-eye nx-c0">Algeria INVEST®</p>
+    <h2 class="nx-h2 nx-c">Passer de <span>l’information à la décision</span></h2>
+    <p class="nx-p nx-c2">Algeria INVEST® ne se limite pas à présenter le marché algérien.</p>
+    <p class="nx-p nx-c2">Nous aidons les investisseurs et entreprises à comprendre l’environnement, qualifier les opportunités, analyser les conditions d’entrée et structurer leur démarche en Algérie.</p>
+    <div class="nx-approach">
+      <div class="nx-approach__head"><h3>Notre approche</h3></div>
+      <ol>
+        <li><i>01</i><h3>Comprendre</h3><p>Marché · secteurs · environnement</p></li>
+        <li><i>02</i><h3>Évaluer</h3><p>Opportunité · risques · faisabilité</p></li>
+        <li><i>03</i><h3>Structurer</h3><p>Modèle d’implantation · partenaires · cadre réglementaire</p></li>
+        <li><i>04</i><h3>Exécuter</h3><p>Démarches · coordination · accompagnement local</p></li>
+      </ol>
+      <div class="nx-approach__foot"><a href="#" class="nx-btn nx-btn--navy">→ Découvrir notre approche</a></div>
+    </div>
+  </div>
+</section>
 
-                <div class="grid">
-                    <div class="card c1">
-                        <div class="card-bg"></div>
-                        <span class="feat-icon">
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="1.6"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            >
-                                <circle cx="12" cy="12" r="2.2" />
-                                <path d="M12 3a9 9 0 0 1 9 9" />
-                                <path d="M12 7.2a4.8 4.8 0 0 1 4.8 4.8" />
-                            </svg>
-                        </span>
-                        <h3>Abonnements &amp;<br />veille stratégique</h3>
-                        <p>
-                            Veille économique et juridique, alertes
-                            réglementaires en temps réel.
-                        </p>
-                        <a href="#" class="feat-btn"
-                            >Explore More
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2.4"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            >
-                                <path d="M6 5l6 5-6 5M12 5l6 5-6 5" />
-                            </svg>
-                        </a>
-                    </div>
+<section class="nx-cta">
+  <div class="nx-w">
+    <h2 class="nx-h2">Vous envisagez un investissement <span>en Algérie ?</span></h2>
+    <p>Commencez par comprendre le marché, le cadre et les opportunités.</p>
+    <div class="nx-row nx-cc"><a href="#nx-story" class="nx-btn nx-btn--line-w">Explorer le marché</a><a href="#nx-secteurs" class="nx-btn nx-btn--line-w">Voir les opportunités</a><a href="contact.html" class="nx-btn nx-btn--cyan">Parler à Algeria INVEST® ↗</a></div>
+  </div>
+</section>
+</div>
+</main>
 
-                    <div class="card c2">
-                        <div class="card-bg">
-                            <span class="feat-quarter"></span>
-                        </div>
-                        <span class="feat-icon">
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="1.6"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            >
-                                <path
-                                    d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"
-                                />
-                                <circle cx="9" cy="7" r="4" />
-                                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                            </svg>
-                        </span>
-                        <h3>Mise en relation<br />d'affaires</h3>
-                        <p>
-                            Recherche de partenaires B2B ciblés et accès au
-                            réseau Algeria Tenders®.
-                        </p>
-                        <a href="#" class="feat-btn"
-                            >Explore More
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2.4"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            >
-                                <path d="M6 5l6 5-6 5M12 5l6 5-6 5" />
-                            </svg>
-                        </a>
-                    </div>
+<div class="nx-foot" role="contentinfo">
+  <div class="nx-w nx-foot__in">
+    <a href="index.html"><img src="images/logo-invest.png" alt="Algeria INVEST" /></a>
+    <nav><a href="#nx-story">Investir en Algérie</a><a href="#nx-secteurs">Opportunités</a><a href="#nx-cadre">Cadre légal</a><a href="#nx-approche">Notre approche</a></nav>
+    <p>Un projet i2b Group — Alger, 2026</p>
+  </div>
+</div>
 
-                    <div class="card c3">
-                        <div class="card-bg">
-                            <span class="feat-quarter"></span>
-                        </div>
-                        <span class="feat-icon">
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="1.6"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            >
-                                <path d="M4 19h16" />
-                                <path d="M7 19v-6" />
-                                <path d="M12 19v-9" />
-                                <path d="M17 19v-4" />
-                                <path d="M13.5 7.5L17 4l3.5 3.5" />
-                                <path d="M17 4v5" />
-                            </svg>
-                        </span>
-                        <h3>Études, analyses<br />&amp; due diligence</h3>
-                        <p>
-                            Études de marché, faisabilité ROI/TRI/VAN, due
-                            diligence juridique et financière.
-                        </p>
-                        <a href="#" class="feat-btn"
-                            >Explore More
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2.4"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            >
-                                <path d="M6 5l6 5-6 5M12 5l6 5-6 5" />
-                            </svg>
-                        </a>
-                    </div>
-
-                    <div class="card c4">
-                        <div class="card-bg"></div>
-                        <span class="feat-icon">
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="1.6"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            >
-                                <rect
-                                    x="3"
-                                    y="7"
-                                    width="18"
-                                    height="13"
-                                    rx="2"
-                                />
-                                <path
-                                    d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
-                                />
-                                <path d="M3 13h18" />
-                            </svg>
-                        </span>
-                        <h3>Accompagnement<br />opérationnel</h3>
-                        <p>
-                            Assistance AAPI, création d'entreprise,
-                            implantation, financement et export.
-                        </p>
-                        <a href="#" class="feat-btn"
-                            >Explore More
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="2.4"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            >
-                                <path d="M6 5l6 5-6 5M12 5l6 5-6 5" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- miza-section-end -->
-
-        <!-- ================= journeys-slider-section ================= -->
-
-        <section class="jn-section" id="jnSection">
-            <div class="jn-cursor" id="jnCur"></div>
-            <div class="jn-loadbar" id="jnLb"></div>
-            <div class="jn-backdrop" id="jnBgBase"></div>
-
-            <!-- logo + titre + sous-titre, fixes sur toutes les slides -->
-            <a href="#" class="jn-brand">
-                <img
-                    src="images/workshop-logo.png"
-                    alt="Algeria INVEST"
-                    class="jn-brand__logo"
-                />
-                <div class="jn-brand__text">
-                    <div class="jn-brand__title">
-                        <h1>
-                            6 ateliers pratiques pour réussir <br />votre
-                            investissement
-                        </h1>
-                    </div>
-                    <div class="jn-brand__subtitle">
-                        Des sessions conçues par nos experts pour donner aux
-                        investisseurs <br />les clés concrètes du marché
-                        algérien — cadre légal, création d'entreprise,
-                        <br />financement, conformité, réseau et due diligence.
-                    </div>
-                </div>
-            </a>
-
-            <!-- texte ambiant sur le fond, généré par le JS depuis JN_SLIDES -->
-            <div class="jn-ambient" id="jnAmbient">
-                <div class="jn-ambient__index">
-                    <div class="jn-ambient__index-value" id="jnIdxN"></div>
-                    <div class="jn-ambient__index-total" id="jnIdxT"></div>
-                </div>
-                <div class="jn-ambient__caption" id="jnAmbCaption"></div>
-                <div class="jn-ambient__region">
-                    <div class="jn-ambient__region-name" id="jnAmbRegion"></div>
-                </div>
-                <div class="jn-ambient__stat">
-                    <div class="jn-ambient__stat-value" id="jnAmbLat"></div>
-                    <div class="jn-ambient__stat-label">Latitude</div>
-                </div>
-            </div>
-
-            <!-- slides générés depuis JN_SLIDES dans script.js -->
-            <div class="jn-slider" id="jnSl"></div>
-
-            <!-- panel verre dépoli persistant, en dehors du calque qui glisse -->
-            <div class="jn-glass-panel" id="jnGlassOuter">
-                <div class="jn-glass-panel__blur"></div>
-                <div class="jn-glass-panel__tint"></div>
-                <div class="jn-glass-panel__glow"></div>
-                <div class="jn-glass-panel__content">
-                    <div class="jn-glass-panel__city" id="jnPCity"></div>
-                    <a class="jn-glass-panel__cta" id="jnPCta" href="#">
-                        <span id="jnPCtaLabel">S'inscrire</span>
-                        <span class="jn-glass-panel__cta-arrow">→</span>
-                    </a>
-                    <div class="jn-glass-panel__meta">
-                        <div class="jn-glass-panel__date" id="jnPDate"></div>
-                        <div
-                            class="jn-glass-panel__coords"
-                            id="jnPCoords"
-                        ></div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="jn-slider-nav jn-slider-nav--prev" id="jnNavL"></div>
-            <div class="jn-slider-nav jn-slider-nav--next" id="jnNavR"></div>
-            <div class="jn-progress" id="jnProg">
-                <div class="jn-progress__fill" id="jnPf"></div>
-            </div>
-            <div class="jn-dots" id="jnDots"></div>
-        </section>
-
-        <!-- section-step-by-step -->
-
-        <section class="process" id="methodologie">
-            <div class="process__glow process__glow--a"></div>
-            <div class="process__glow process__glow--b"></div>
-
-            <div class="process__header">
-                <p class="process__eyebrow">05 - Approche & valeur ajoutée</p>
-                <h1>
-                    De la décision à l'implantation, un parcours en 5 étapes
-                </h1>
-                <br />
-                <p>
-                    Une méthodologie structurée et transparente pour sécuriser
-                    votre investissement en Algérie, du diagnostic initial au
-                    suivi post-implantation.
-                </p>
-            </div>
-
-            <div class="process__track">
-                <div class="process__line"></div>
-
-                <div class="process__step process__step--up">
-                    <div class="process__node">01</div>
-                    <div class="process__card">
-                        <div class="process__icon">
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="1.6"
-                            >
-                                <circle cx="10.5" cy="10.5" r="6.5" />
-                                <path d="m20 20-4.3-4.3" />
-                            </svg>
-                        </div>
-                        <h3>Diagnostic &amp; cadrage</h3>
-                        <p>
-                            Analyse des objectifs, du secteur et du modèle ;
-                            identification des enjeux, risques et opportunités.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="process__step process__step--down">
-                    <div class="process__node">02</div>
-                    <div class="process__card">
-                        <div class="process__icon">
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="1.6"
-                            >
-                                <path d="M4 20V10M11 20V4M18 20v-7" />
-                                <path d="M2 20h20" />
-                            </svg>
-                        </div>
-                        <h3>Étude &amp; analyse</h3>
-                        <p>
-                            Marché, faisabilité, due diligence, cadre
-                            réglementaire ; modélisation financière et livrables
-                            écrits.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="process__step process__step--up">
-                    <div class="process__node">03</div>
-                    <div class="process__card">
-                        <div class="process__icon">
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="1.6"
-                            >
-                                <circle cx="6" cy="7" r="2.6" />
-                                <circle cx="18" cy="7" r="2.6" />
-                                <circle cx="12" cy="18" r="2.6" />
-                                <path
-                                    d="M8.2 8.4 10 16M15.8 8.4 14 16M8.4 6.2h7.2"
-                                />
-                            </svg>
-                        </div>
-                        <h3>Mise en relation</h3>
-                        <p>
-                            Activation du réseau : partenaires, fournisseurs,
-                            financeurs. Facilitation des rencontres B2B.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="process__step process__step--down">
-                    <div class="process__node">04</div>
-                    <div class="process__card">
-                        <div class="process__icon">
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="1.6"
-                            >
-                                <path
-                                    d="M12 3 4 6.5v5.2C4 16.9 7.4 20.8 12 22c4.6-1.2 8-5.1 8-10.3V6.5L12 3Z"
-                                />
-                                <path d="m8.6 12 2.4 2.4 4.4-4.4" />
-                            </svg>
-                        </div>
-                        <h3>Accompagnement opérationnel</h3>
-                        <p>
-                            AAPI, CNRC, conformité, implantation, ouverture
-                            bancaire. Suivi complet des formalités.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="process__step process__step--up">
-                    <div class="process__node">05</div>
-                    <div class="process__card">
-                        <div class="process__icon">
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="1.6"
-                            >
-                                <path d="M20 6 9 17l-5-5" />
-                            </svg>
-                        </div>
-                        <h3>Implantation</h3>
-                        <p>
-                            La solution est ancrée, adoptée et pleinement
-                            opérationnelle.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- pourquoi-nous-choisir -->
-
-        <section class="wc-card" id="programmes">
-            <div class="wc-content">
-                <div class="wc-eyebrow">Pourquoi nous choisir</div>
-                <h2 class="wc-title">
-                    Pourquoi choisir <br />Algeria INVEST<sup>®</sup>
-                </h2>
-                <p class="wc-subtitle">
-                    Six raisons qui font de notre plateforme le partenaire de
-                    r&eacute;f&eacute;rence pour investir en Alg&eacute;rie en
-                    toute confiance.
-                </p>
-
-                <div class="wc-features">
-                    <div class="wc-feature">
-                        <div class="wc-feature-icon">
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="1.4"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            >
-                                <circle cx="12" cy="8" r="5" />
-                                <path d="M8.5 12.5 6.5 21l5.5-3 5.5 3-2-8.5" />
-                            </svg>
-                        </div>
-                        <div class="wc-feature-divider"></div>
-                        <div class="wc-feature-title">Expertise locale</div>
-                        <div class="wc-feature-desc">
-                            Une &eacute;quipe implant&eacute;e en
-                            Alg&eacute;rie, qui conna&icirc;t les codes
-                            administratifs, culturels et r&eacute;glementaires.
-                            Nous anticipons les obstacles avant qu'ils
-                            n'apparaissent.
-                        </div>
-                    </div>
-
-                    <div class="wc-feature">
-                        <div class="wc-feature-icon">
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="1.4"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            >
-                                <circle cx="12" cy="12" r="9" />
-                                <path
-                                    d="M3 12h18M12 3c2.5 2.6 3.8 5.7 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.7-3.8-9s1.3-6.4 3.8-9z"
-                                />
-                            </svg>
-                        </div>
-                        <div class="wc-feature-divider"></div>
-                        <div class="wc-feature-title">
-                            Vision internationale
-                        </div>
-                        <div class="wc-feature-desc">
-                            Compr&eacute;hension des attentes des investisseurs
-                            &eacute;trangers. Nous traduisons la
-                            r&eacute;alit&eacute; alg&eacute;rienne en
-                            crit&egrave;res de d&eacute;cision clairs et
-                            actionnables.
-                        </div>
-                    </div>
-
-                    <div class="wc-feature">
-                        <div class="wc-feature-icon">
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="1.4"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            >
-                                <path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3z" />
-                                <path d="M4 7.5 12 12l8-4.5M12 12v9" />
-                            </svg>
-                        </div>
-                        <div class="wc-feature-divider"></div>
-                        <div class="wc-feature-title">
-                            Offre 360&deg; int&eacute;gr&eacute;e
-                        </div>
-                        <div class="wc-feature-desc">
-                            De l'information &agrave; l'implantation, un seul
-                            partenaire couvre l'ensemble du parcours. Pas de
-                            fragmentation ni de discontinuit&eacute;.
-                        </div>
-                    </div>
-
-                    <div class="wc-feature">
-                        <div class="wc-feature-icon">
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="1.4"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            >
-                                <circle cx="8" cy="8" r="3" />
-                                <circle cx="17" cy="9" r="2.5" />
-                                <path
-                                    d="M2.5 20c0-3.6 2.5-6.5 5.5-6.5s5.5 2.9 5.5 6.5M14.5 20c0-2.9 1.8-5.2 4-5.2s4 2.3 4 5.2"
-                                />
-                            </svg>
-                        </div>
-                        <div class="wc-feature-divider"></div>
-                        <div class="wc-feature-title">
-                            R&eacute;seau institutionnel &eacute;tabli
-                        </div>
-                        <div class="wc-feature-desc">
-                            Relations privil&eacute;gi&eacute;es avec l'AAPI,
-                            les minist&egrave;res, les banques et les acteurs
-                            &eacute;conomiques cl&eacute;s &mdash; acc&egrave;s
-                            acc&eacute;l&eacute;r&eacute; aux d&eacute;cideurs.
-                        </div>
-                    </div>
-
-                    <div class="wc-feature">
-                        <div class="wc-feature-icon">
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="1.4"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            >
-                                <path d="M4 20V10M10 20V4M16 20v-7M22 20H2" />
-                            </svg>
-                        </div>
-                        <div class="wc-feature-divider"></div>
-                        <div class="wc-feature-title">Rigueur analytique</div>
-                        <div class="wc-feature-desc">
-                            Des livrables structur&eacute;s et actionnables
-                            &mdash; &eacute;tudes de march&eacute;, due
-                            diligences, plans de financement &mdash; au niveau
-                            des standards des cabinets internationaux.
-                        </div>
-                    </div>
-
-                    <div class="wc-feature">
-                        <div class="wc-feature-icon">
-                            <svg
-                                viewBox="0 0 24 24"
-                                fill="none"
-                                stroke="currentColor"
-                                stroke-width="1.4"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            >
-                                <path d="M7 12h2l2-3 3 6 2-3h2" />
-                                <path
-                                    d="M3 12a9 9 0 0 1 9-9 9 9 0 0 1 9 9 9 9 0 0 1-9 9 9 9 0 0 1-9-9z"
-                                />
-                            </svg>
-                        </div>
-                        <div class="wc-feature-divider"></div>
-                        <div class="wc-feature-title">
-                            Partenariat de confiance
-                        </div>
-                        <div class="wc-feature-desc">
-                            Nous accompagnons nos clients dans la dur&eacute;e.
-                            Notre succ&egrave;s est directement li&eacute;
-                            &agrave; la r&eacute;ussite de leurs projets &mdash;
-                            transparence et &eacute;thique.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="cta-sect cta-sect--dark">
-            <!-- CTA -->
-
-            <div class="cta-band" id="cta-band-2">
-                <div>
-                    <span class="kicker">Passons à l'action</span>
-                    <h1>
-                        Discutons de vos projets et<br />besoins spécifiques
-                    </h1>
-                    <p>
-                        Notre équipe vous répond pour qualifier votre projet et
-                        vous orienter vers le pôle d'expertise adapté.
-                    </p>
-                </div>
-
-                <div class="cta-actions">
-                    <a href="#" class="btn-primary"
-                        >Accéder à la plateforme — algeriainvest.com</a
-                    >
-                    <a href="#" class="btn-secondary"
-                        >Legal INVEST &amp; services →</a
-                    >
-                </div>
-            </div>
-        </section>
-        <!-- FOOTER -->
-        <footer class="site-footer">
-            <div class="footer-top">
-                <div class="ey-logo">
-                    <img
-                        src="images/logo-invest.png"
-                        alt="logo"
-                        class="footer-logo-img"
-                    />
-                </div>
-
-                <nav class="footer-nav">
-                    <a href="#dzInvest">Investir en Algérie</a>
-                    <a href="#services">Nos services</a>
-                    <a href="#methodologie">Notre méthodologie</a>
-                    <a href="#programmes">Pourquoi Algeria INVEST®</a>
-                    <a href="contact.html">Contact</a>
-                </nav>
-            </div>
-
-            <div class="footer-bottom">
-                <p class="footer-disclaimer">
-                    La première plateforme digitale d'information et
-                    d'accompagnement dédiée à l'investissement en Algérie.
-                    <br /><br />Un projet i2b Group — Alger, 2026.
-                </p>
-
-                <div class="footer-social">
-                    <a href="#" aria-label="Facebook">
-                        <svg viewBox="0 0 24 24">
-                            <path
-                                d="M22 12a10 10 0 1 0-11.5 9.9v-7H7.9V12h2.6V9.8c0-2.6 1.5-4 3.9-4 1.1 0 2.3.2 2.3.2v2.5h-1.3c-1.3 0-1.7.8-1.7 1.6V12h2.9l-.5 2.9h-2.4v7A10 10 0 0 0 22 12z"
-                            />
-                        </svg>
-                    </a>
-                    <a href="#" aria-label="X">
-                        <svg viewBox="0 0 24 24">
-                            <path
-                                d="M18.9 2H22l-7.2 8.3L23.3 22h-6.6l-5.2-6.7L5.6 22H2.4l7.7-8.8L1 2h6.8l4.7 6.2L18.9 2zm-1.2 18h1.8L7.4 4H5.5l12.2 16z"
-                            />
-                        </svg>
-                    </a>
-                    <a href="#" aria-label="LinkedIn">
-                        <svg viewBox="0 0 24 24">
-                            <path
-                                d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 0 1 0-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.6c0-1.34-.03-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96V21H9z"
-                            />
-                        </svg>
-                    </a>
-                    <a href="#" aria-label="YouTube">
-                        <svg viewBox="0 0 24 24">
-                            <path
-                                d="M23 12s0-3.2-.4-4.7c-.2-.9-.9-1.6-1.8-1.8C19 5 12 5 12 5s-7 0-8.8.5c-.9.2-1.6.9-1.8 1.8C1 8.8 1 12 1 12s0 3.2.4 4.7c.2.9.9 1.6 1.8 1.8C5 19 12 19 12 19s7 0 8.8-.5c.9-.2 1.6-.9 1.8-1.8.4-1.5.4-4.7.4-4.7zM10 15V9l6 3-6 3z"
-                            />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </footer>
-
-        <!-- BOUTON REMONTER EN HAUT -->
+<!-- BOUTON REMONTER EN HAUT -->
         <button
             type="button"
             class="back-to-top"
@@ -1428,6 +540,6 @@
             </svg>
         </button>
 
-        <script src="script.js" defer></script>
+        <script src="main.js" defer></script>
     </body>
 </html>
